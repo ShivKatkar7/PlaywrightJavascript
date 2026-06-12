@@ -1,6 +1,20 @@
 pipeline {
     agent any
 
+    parameters {
+        choice(
+            name: 'BROWSER',
+            choices: ['chrome', 'safari'],
+            description: 'Browser'
+        )
+
+        string(
+            name: 'SPECFILE',
+            defaultValue: 'upload-download.spec.js',
+            description: 'Spec file'
+        )
+    }
+
     stages {
 
         stage('Checkout') {
@@ -18,11 +32,13 @@ pipeline {
             }
         }
 
-        stage('Run Tests') {
+        stage('Run Playwright') {
             steps {
-                sh '''
-                npx playwright test
-                '''
+                sh """
+                npx playwright test tests/${params.SPECFILE} \
+                --config=playwright.config1.js \
+                --project=${params.BROWSER}
+                """
             }
         }
     }
