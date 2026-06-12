@@ -1,0 +1,1 @@
+[{"uid":"7d44a01c74a6b4fd","name":"@Smoke More validations","time":{"start":1777223831642,"stop":1777223835642,"duration":4000},"status":"passed","severity":"normal"},{"uid":"9e6455eb666718dd","name":"@Smoke Client app login","time":{"start":1777223831642,"stop":1777223837384,"duration":5742},"status":"passed","severity":"normal"}]
