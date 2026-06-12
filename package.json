@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "tsc": "tsc",
     "regression": "npx playwright test",
     "smoketag": "npx playwright test --grep @Smoke",

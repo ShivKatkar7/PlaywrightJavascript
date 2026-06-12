@@ -9,11 +9,11 @@ const config = defineConfig({
     timeout: 40*1000,
   },
   reporter: 'html',
-  webServer: {
-    command: 'npm run start',
-    url: 'http://127.0.0.1:3000',
-    reuseExistingServer: !process.env.CI,
-  },
+  // webServer: {
+  //   command: 'npm run start',
+  //   url: 'http://127.0.0.1:3000',
+  //   reuseExistingServer: !process.env.CI,
+  // },
   projects: [
     {
       name: 'chrome',
