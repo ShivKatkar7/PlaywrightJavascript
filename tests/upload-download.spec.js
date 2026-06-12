@@ -34,7 +34,8 @@ test('Upload download excel validation', async ({page})=>
     const textSearch = "Mango";
     const updateValue = '350';
     await page.goto("https://rahulshettyacademy.com/upload-download-test/index.html");
-    await page.viewportSize({ width: 1920, height: 1080 });
+    await page.setViewportSize({ width: 2010, height: 1500 });
+    await page.pause();
     const downloadPromise = page.waitForEvent('download');
     await page.getByRole("button", {name: 'Download'}).click();
     const download = await downloadPromise;  // ✅ Capture the download object
