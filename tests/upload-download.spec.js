@@ -58,4 +58,5 @@ test.afterEach(async ({ page }, testInfo) => {
         body: screenshot,
         contentType: 'image/png'
     });
+    //test folder created
 });
