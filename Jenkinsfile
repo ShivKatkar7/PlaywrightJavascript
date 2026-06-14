@@ -56,7 +56,7 @@ pipeline {
                 URL:
                 ${env.BUILD_URL}
                 """,
-                to: 'shivanikatkar18@gmail.com'
+                to: 'shivani.auti77@gmail.com'
             )
         }
 
@@ -72,7 +72,7 @@ pipeline {
                 URL:
                 ${env.BUILD_URL}
                 """,
-                to: 'shivanikatkar18@gmail.com'
+                to: 'shivani.auti77@gmail.com'
             )
         }
     }
