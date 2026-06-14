@@ -43,10 +43,37 @@ pipeline {
         }
     }
 
-    post {
-        always {
-            archiveArtifacts artifacts: 'playwright-report/**', allowEmptyArchive: true
-            emailext body: 'Jenkins build status', subject: 'Jenkins pipeline status', to: 'shivanikatkar18@gmail.com'
+   post {
+        success {
+            emailext(
+                subject: "SUCCESS: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                body: """
+                Build Successful
+
+                Job: ${env.JOB_NAME}
+                Build: ${env.BUILD_NUMBER}
+
+                URL:
+                ${env.BUILD_URL}
+                """,
+                to: 'shivanikatkar18@gmail.com'
+            )
+        }
+
+        failure {
+            emailext(
+                subject: "FAILED: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                body: """
+                Build Failed
+
+                Job: ${env.JOB_NAME}
+                Build: ${env.BUILD_NUMBER}
+
+                URL:
+                ${env.BUILD_URL}
+                """,
+                to: 'shivanikatkar18@gmail.com'
+            )
         }
     }
 }
