@@ -1,0 +1,1041 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: flipkart.spec.js >> Flipkart placeorder automation
+- Location: tests/flipkart.spec.js:3:1
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e7]:
+    - generic [ref=e9]:
+      - link "Flipkart" [ref=e10] [cursor=pointer]:
+        - /url: /
+        - img "Flipkart" [ref=e11]
+      - link "Explore Plus" [ref=e12] [cursor=pointer]:
+        - /url: /plus
+        - text: Explore Plus
+        - img [ref=e13]
+    - generic [ref=e16]:
+      - textbox "Search for products, brands and more" [ref=e18]: apple iphone14
+      - button [ref=e19] [cursor=pointer]:
+        - img [ref=e20]
+    - link "Login" [ref=e28] [cursor=pointer]:
+      - /url: /account/login?ret=/search%3Fq%3Dapple%2520iphone14%26otracker%3Dsearch%26otracker1%3Dsearch%26marketplace%3DFLIPKART%26as-show%3Don%26as%3Doff
+    - link "Become a Seller" [ref=e30] [cursor=pointer]:
+      - /url: https://seller.flipkart.com/sell-online/?utm_source=fkwebsite&utm_medium=websitedirect
+      - generic [ref=e31]: Become a Seller
+    - generic [ref=e33] [cursor=pointer]:
+      - generic [ref=e36]: More
+      - img [ref=e37]
+    - link "Cart" [ref=e42] [cursor=pointer]:
+      - /url: /viewcart?exploreMode=true&preference=FLIPKART
+      - img [ref=e43]
+      - generic [ref=e45]: Cart
+  - generic [ref=e50]:
+    - generic [ref=e51] [cursor=pointer]:
+      - text: Electronics
+      - img [ref=e52]
+    - generic [ref=e54] [cursor=pointer]:
+      - text: TVs & Appliances
+      - img [ref=e55]
+    - generic [ref=e57] [cursor=pointer]:
+      - text: Men
+      - img [ref=e58]
+    - generic [ref=e60] [cursor=pointer]:
+      - text: Women
+      - img [ref=e61]
+    - generic [ref=e63] [cursor=pointer]:
+      - text: Baby & Kids
+      - img [ref=e64]
+    - generic [ref=e66] [cursor=pointer]:
+      - text: Home & Furniture
+      - img [ref=e67]
+    - generic [ref=e69] [cursor=pointer]:
+      - text: Sports, Books & More
+      - img [ref=e70]
+    - link "Flights" [ref=e72] [cursor=pointer]:
+      - /url: /travel/flights?otracker=nmenu_Flights
+    - link "Offer Zone" [ref=e73] [cursor=pointer]:
+      - /url: /offers-list/top-deals?screen=dynamic&pk=themeViews%3DDT-OMU-A2%3ADT-OMU~widgetType%3DdealCard~contentType%3Dneo&otracker=nmenu_offer-zone
+  - generic [ref=e75]:
+    - generic [ref=e77]:
+      - generic [ref=e79]:
+        - generic [ref=e82]: Filters
+        - generic [ref=e84]:
+          - generic [ref=e85]: CATEGORIES
+          - generic [ref=e87]:
+            - img [ref=e89] [cursor=pointer]
+            - link "Mobiles & Accessories" [ref=e91] [cursor=pointer]:
+              - /url: /mobiles-accessories/pr?sid=tyy&q=apple+iphone14&otracker=categorytree
+          - generic [ref=e93]:
+            - img [ref=e95] [cursor=pointer]
+            - link "Mobiles" [ref=e97] [cursor=pointer]:
+              - /url: /mobiles/pr?sid=tyy,4io&q=apple+iphone14&otracker=categorytree
+        - generic [ref=e98]:
+          - generic [ref=e100]: Price
+          - generic [ref=e115]:
+            - generic [ref=e116]: .
+            - generic [ref=e117]: .
+            - generic [ref=e118]: .
+            - generic [ref=e119]: .
+            - generic [ref=e120]: .
+            - generic: .
+          - generic [ref=e121]:
+            - combobox [ref=e123]:
+              - option "Min" [selected]
+              - option "₹10000"
+              - option "₹15000"
+              - option "₹20000"
+              - option "₹30000"
+            - generic [ref=e124]: to
+            - combobox [ref=e126]:
+              - option "₹10000"
+              - option "₹15000"
+              - option "₹20000"
+              - option "₹30000"
+              - option "₹30000+" [selected]
+        - generic [ref=e127]:
+          - generic [ref=e128] [cursor=pointer]:
+            - generic [ref=e129]: Brand
+            - img [ref=e130]
+          - generic [ref=e132]:
+            - generic [ref=e133]:
+              - generic [ref=e134]:
+                - img [ref=e135]
+                - textbox "Search Brand" [ref=e139]
+              - generic "Apple" [ref=e140] [cursor=pointer]:
+                - generic [ref=e144]: Apple
+              - generic "Snooky" [ref=e145] [cursor=pointer]:
+                - generic [ref=e149]: Snooky
+              - generic "AKSHUD" [ref=e150] [cursor=pointer]:
+                - generic [ref=e154]: AKSHUD
+              - generic "Gorilla Protection" [ref=e155] [cursor=pointer]:
+                - generic [ref=e159]: Gorilla Protection
+              - generic "welldesign" [ref=e160] [cursor=pointer]:
+                - generic [ref=e164]: welldesign
+              - generic "LIKEDESIGN" [ref=e165] [cursor=pointer]:
+                - generic [ref=e169]: LIKEDESIGN
+            - generic [ref=e170] [cursor=pointer]: 263 MORE
+        - generic [ref=e171]:
+          - img [ref=e176] [cursor=pointer]
+          - generic [ref=e178] [cursor=pointer]: "?"
+        - generic [ref=e180] [cursor=pointer]:
+          - generic [ref=e181]: Customer Ratings
+          - img [ref=e182]
+        - generic [ref=e185] [cursor=pointer]:
+          - generic [ref=e186]: GST Invoice Available
+          - img [ref=e187]
+        - generic [ref=e189]:
+          - generic [ref=e190] [cursor=pointer]:
+            - generic [ref=e191]: Ram
+            - img [ref=e192]
+          - generic "1 GB and Below" [ref=e196] [cursor=pointer]:
+            - generic [ref=e200]: 1 GB and Below
+        - generic [ref=e202] [cursor=pointer]:
+          - generic [ref=e203]: Internal Storage
+          - img [ref=e204]
+        - generic [ref=e207] [cursor=pointer]:
+          - generic [ref=e208]: Battery Capacity
+          - img [ref=e209]
+        - generic [ref=e212] [cursor=pointer]:
+          - generic [ref=e213]: Screen Size
+          - img [ref=e214]
+        - generic [ref=e217] [cursor=pointer]:
+          - generic [ref=e218]: Primary Camera
+          - img [ref=e219]
+        - generic [ref=e222] [cursor=pointer]:
+          - generic [ref=e223]: Secondary Camera
+          - img [ref=e224]
+        - generic [ref=e227] [cursor=pointer]:
+          - generic [ref=e228]: Processor Brand
+          - img [ref=e229]
+        - generic [ref=e232] [cursor=pointer]:
+          - generic [ref=e233]: Speciality
+          - img [ref=e234]
+        - generic [ref=e237] [cursor=pointer]:
+          - generic [ref=e238]: Resolution Type
+          - img [ref=e239]
+        - generic [ref=e242] [cursor=pointer]:
+          - generic [ref=e243]: Operating System
+          - img [ref=e244]
+        - generic [ref=e247] [cursor=pointer]:
+          - generic [ref=e248]: Network Type
+          - img [ref=e249]
+        - generic [ref=e252] [cursor=pointer]:
+          - generic [ref=e253]: Sim Type
+          - img [ref=e254]
+        - generic [ref=e257] [cursor=pointer]:
+          - generic [ref=e258]: Availability
+          - img [ref=e259]
+        - generic [ref=e261]:
+          - generic [ref=e262] [cursor=pointer]:
+            - generic [ref=e263]: Discount
+            - img [ref=e264]
+          - generic [ref=e267]:
+            - generic "50% or more" [ref=e268] [cursor=pointer]:
+              - generic [ref=e272]: 50% or more
+            - generic "40% or more" [ref=e273] [cursor=pointer]:
+              - generic [ref=e277]: 40% or more
+            - generic "30% or more" [ref=e278] [cursor=pointer]:
+              - generic [ref=e282]: 30% or more
+            - generic "20% or more" [ref=e283] [cursor=pointer]:
+              - generic [ref=e287]: 20% or more
+            - generic "10% or more" [ref=e288] [cursor=pointer]:
+              - generic [ref=e292]: 10% or more
+        - generic [ref=e293]:
+          - generic [ref=e294] [cursor=pointer]:
+            - generic [ref=e295]: Offers
+            - img [ref=e296]
+          - generic "Special Price" [ref=e300] [cursor=pointer]:
+            - generic [ref=e304]: Special Price
+        - generic [ref=e306] [cursor=pointer]:
+          - generic [ref=e307]: Type
+          - img [ref=e308]
+        - generic [ref=e311] [cursor=pointer]:
+          - generic [ref=e312]: Clock Speed
+          - img [ref=e313]
+        - generic [ref=e316] [cursor=pointer]:
+          - generic [ref=e317]: Features
+          - img [ref=e318]
+        - generic [ref=e321] [cursor=pointer]:
+          - generic [ref=e322]: Number of Cores
+          - img [ref=e323]
+      - link "Need help? Help me decide Buying Guide" [ref=e326] [cursor=pointer]:
+        - /url: /buying-guide/mobiles?sid=tyy,4io&otracker=bg_from_browse_lhs
+        - generic [ref=e327]: Need help?
+        - generic [ref=e328]:
+          - text: Help me decide
+          - img [ref=e329]
+        - img "Buying Guide" [ref=e331]
+    - generic [ref=e332]:
+      - generic [ref=e335]:
+        - generic [ref=e336]:
+          - generic [ref=e337]:
+            - link "Home" [ref=e338] [cursor=pointer]:
+              - /url: /
+            - img [ref=e339]
+          - generic [ref=e341]:
+            - link "Mobiles & Accessories" [ref=e342] [cursor=pointer]:
+              - /url: /mobiles-accessories/pr?sid=tyy&marketplace=FLIPKART
+            - img [ref=e343]
+          - link "Mobiles" [ref=e346] [cursor=pointer]:
+            - /url: /mobiles/pr?sid=tyy,4io&marketplace=FLIPKART
+        - generic [ref=e347]: Showing 1 – 24 of 1,349 results for "apple iphone14"
+        - generic [ref=e348]:
+          - generic [ref=e349]: Sort By
+          - generic [ref=e350]: Relevance
+          - generic [ref=e351] [cursor=pointer]: Popularity
+          - generic [ref=e352] [cursor=pointer]: Price -- Low to High
+          - generic [ref=e353] [cursor=pointer]: Price -- High to Low
+          - generic [ref=e354] [cursor=pointer]: Newest First
+      - link "Apple iPhone 14 (Starlight, 128 GB) Currently unavailable Add to Compare Apple iPhone 14 (Starlight, 128 GB) 4.6 2,84,387 Ratings & 11,308 Reviews • 128 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 12MP + 12MP | 12MP Front Camera • A15 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹54,900 Upto ₹38,300 Off on Exchange Bank Offer" [ref=e359] [cursor=pointer]:
+        - /url: /apple-iphone-14-starlight-128-gb/p/itm3485a56f6e676?pid=MOBGHWFHABH3G73H&lid=LSTMOBGHWFHABH3G73HHJP0CG&marketplace=FLIPKART&q=apple+iphone14&store=tyy%2F4io&srno=s_1_1&otracker=search&otracker1=search&fm=organic&iid=5adabbbb-a602-450c-bf08-23712d2959ba.MOBGHWFHABH3G73H.SEARCH&ppt=None&ppn=None&ssid=5g7etnyqzk0000001781451889355&qH=a849984bb982e8e1&ov_redirect=true
+        - generic [ref=e360]:
+          - generic [ref=e361]:
+            - img "Apple iPhone 14 (Starlight, 128 GB)" [ref=e364]
+            - generic: Currently unavailable
+          - generic [ref=e370]: Add to Compare
+          - img [ref=e373]
+        - generic [ref=e375]:
+          - generic [ref=e376]:
+            - generic [ref=e377]: Apple iPhone 14 (Starlight, 128 GB)
+            - generic [ref=e378]:
+              - generic [ref=e380]:
+                - text: "4.6"
+                - img [ref=e381]
+              - generic [ref=e383]: 2,84,387 Ratings & 11,308 Reviews
+            - list [ref=e385]:
+              - listitem [ref=e386]: • 128 GB ROM
+              - listitem [ref=e387]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+              - listitem [ref=e388]: • 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e389]: • A15 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e390]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e391]:
+            - generic [ref=e394]: ₹54,900
+            - img [ref=e396]
+            - generic [ref=e398]:
+              - generic [ref=e399]: Upto
+              - generic [ref=e400]: ₹38,300
+              - generic [ref=e401]: Off on Exchange
+            - generic [ref=e404]: Bank Offer
+      - link "Apple iPhone 14 (Midnight, 128 GB) Currently unavailable Add to Compare Apple iPhone 14 (Midnight, 128 GB) 4.6 2,84,387 Ratings & 11,308 Reviews • 128 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 12MP + 12MP | 12MP Front Camera • A15 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹54,900 Upto ₹38,300 Off on Exchange Bank Offer" [ref=e409] [cursor=pointer]:
+        - /url: /apple-iphone-14-midnight-128-gb/p/itm9e6293c322a84?pid=MOBGHWFHECFVMDCX&lid=LSTMOBGHWFHECFVMDCXBOYSND&marketplace=FLIPKART&q=apple+iphone14&store=tyy%2F4io&srno=s_1_2&otracker=search&otracker1=search&fm=organic&iid=5adabbbb-a602-450c-bf08-23712d2959ba.MOBGHWFHECFVMDCX.SEARCH&ppt=None&ppn=None&ssid=5g7etnyqzk0000001781451889355&qH=a849984bb982e8e1&ov_redirect=true
+        - generic [ref=e410]:
+          - generic [ref=e411]:
+            - img "Apple iPhone 14 (Midnight, 128 GB)" [ref=e414]
+            - generic: Currently unavailable
+          - generic [ref=e420]: Add to Compare
+          - img [ref=e423]
+        - generic [ref=e425]:
+          - generic [ref=e426]:
+            - generic [ref=e427]: Apple iPhone 14 (Midnight, 128 GB)
+            - generic [ref=e428]:
+              - generic [ref=e430]:
+                - text: "4.6"
+                - img [ref=e431]
+              - generic [ref=e433]: 2,84,387 Ratings & 11,308 Reviews
+            - list [ref=e435]:
+              - listitem [ref=e436]: • 128 GB ROM
+              - listitem [ref=e437]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+              - listitem [ref=e438]: • 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e439]: • A15 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e440]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e441]:
+            - generic [ref=e444]: ₹54,900
+            - img [ref=e446]
+            - generic [ref=e448]:
+              - generic [ref=e449]: Upto
+              - generic [ref=e450]: ₹38,300
+              - generic [ref=e451]: Off on Exchange
+            - generic [ref=e454]: Bank Offer
+      - link "Apple iPhone 14 (Blue, 128 GB) Currently unavailable Add to Compare Apple iPhone 14 (Blue, 128 GB) 4.6 2,84,387 Ratings & 11,308 Reviews • 128 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 12MP + 12MP | 12MP Front Camera • A15 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹54,900 Upto ₹38,300 Off on Exchange Bank Offer" [ref=e459] [cursor=pointer]:
+        - /url: /apple-iphone-14-blue-128-gb/p/itmdb77f40da6b6d?pid=MOBGHWFHSV7GUFWA&lid=LSTMOBGHWFHSV7GUFWAFEQJQ4&marketplace=FLIPKART&q=apple+iphone14&store=tyy%2F4io&srno=s_1_3&otracker=search&otracker1=search&fm=organic&iid=5adabbbb-a602-450c-bf08-23712d2959ba.MOBGHWFHSV7GUFWA.SEARCH&ppt=None&ppn=None&ssid=5g7etnyqzk0000001781451889355&qH=a849984bb982e8e1&ov_redirect=true
+        - generic [ref=e460]:
+          - generic [ref=e461]:
+            - img "Apple iPhone 14 (Blue, 128 GB)" [ref=e464]
+            - generic: Currently unavailable
+          - generic [ref=e470]: Add to Compare
+          - img [ref=e473]
+        - generic [ref=e475]:
+          - generic [ref=e476]:
+            - generic [ref=e477]: Apple iPhone 14 (Blue, 128 GB)
+            - generic [ref=e478]:
+              - generic [ref=e480]:
+                - text: "4.6"
+                - img [ref=e481]
+              - generic [ref=e483]: 2,84,387 Ratings & 11,308 Reviews
+            - list [ref=e485]:
+              - listitem [ref=e486]: • 128 GB ROM
+              - listitem [ref=e487]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+              - listitem [ref=e488]: • 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e489]: • A15 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e490]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e491]:
+            - generic [ref=e494]: ₹54,900
+            - img [ref=e496]
+            - generic [ref=e498]:
+              - generic [ref=e499]: Upto
+              - generic [ref=e500]: ₹38,300
+              - generic [ref=e501]: Off on Exchange
+            - generic [ref=e504]: Bank Offer
+      - link "Apple iPhone 14 (Midnight, 256 GB) Add to Compare Apple iPhone 14 (Midnight, 256 GB) 4.6 2,84,387 Ratings & 11,308 Reviews • 256 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 12MP + 12MP | 12MP Front Camera • A15 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹64,900 Only 1 left Upto ₹47,350 Off on Exchange" [ref=e509] [cursor=pointer]:
+        - /url: /apple-iphone-14-midnight-256-gb/p/itmdb32e3c997112?pid=MOBGHWFH4H3MMRAA&lid=LSTMOBGHWFH4H3MMRAAQSJTKY&marketplace=FLIPKART&q=apple+iphone14&store=tyy%2F4io&srno=s_1_4&otracker=search&otracker1=search&fm=organic&iid=5adabbbb-a602-450c-bf08-23712d2959ba.MOBGHWFH4H3MMRAA.SEARCH&ppt=None&ppn=None&ssid=5g7etnyqzk0000001781451889355&qH=a849984bb982e8e1&ov_redirect=true
+        - generic [ref=e510]:
+          - img "Apple iPhone 14 (Midnight, 256 GB)" [ref=e514]
+          - generic [ref=e520]: Add to Compare
+          - img [ref=e523]
+        - generic [ref=e525]:
+          - generic [ref=e526]:
+            - generic [ref=e527]: Apple iPhone 14 (Midnight, 256 GB)
+            - generic [ref=e528]:
+              - generic [ref=e530]:
+                - text: "4.6"
+                - img [ref=e531]
+              - generic [ref=e533]: 2,84,387 Ratings & 11,308 Reviews
+            - list [ref=e535]:
+              - listitem [ref=e536]: • 256 GB ROM
+              - listitem [ref=e537]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+              - listitem [ref=e538]: • 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e539]: • A15 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e540]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e541]:
+            - generic [ref=e544]: ₹64,900
+            - img [ref=e546]
+            - generic [ref=e549]: Only 1 left
+            - generic [ref=e551]:
+              - generic [ref=e552]: Upto
+              - generic [ref=e553]: ₹47,350
+              - generic [ref=e554]: Off on Exchange
+      - link "Apple iPhone 14 (Starlight, 256 GB) Currently unavailable Add to Compare Apple iPhone 14 (Starlight, 256 GB) 4.6 2,84,387 Ratings & 11,308 Reviews • 256 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 12MP + 12MP | 12MP Front Camera • A15 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹64,900 Upto ₹47,350 Off on Exchange Bank Offer" [ref=e559] [cursor=pointer]:
+        - /url: /apple-iphone-14-starlight-256-gb/p/itmaeda15697bb79?pid=MOBGHWFHBJGZYRZC&lid=LSTMOBGHWFHBJGZYRZCMN7CXQ&marketplace=FLIPKART&q=apple+iphone14&store=tyy%2F4io&srno=s_1_5&otracker=search&otracker1=search&fm=organic&iid=5adabbbb-a602-450c-bf08-23712d2959ba.MOBGHWFHBJGZYRZC.SEARCH&ppt=None&ppn=None&ssid=5g7etnyqzk0000001781451889355&qH=a849984bb982e8e1&ov_redirect=true
+        - generic [ref=e560]:
+          - generic [ref=e561]:
+            - img "Apple iPhone 14 (Starlight, 256 GB)" [ref=e564]
+            - generic: Currently unavailable
+          - generic [ref=e570]: Add to Compare
+          - img [ref=e573]
+        - generic [ref=e575]:
+          - generic [ref=e576]:
+            - generic [ref=e577]: Apple iPhone 14 (Starlight, 256 GB)
+            - generic [ref=e578]:
+              - generic [ref=e580]:
+                - text: "4.6"
+                - img [ref=e581]
+              - generic [ref=e583]: 2,84,387 Ratings & 11,308 Reviews
+            - list [ref=e585]:
+              - listitem [ref=e586]: • 256 GB ROM
+              - listitem [ref=e587]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+              - listitem [ref=e588]: • 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e589]: • A15 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e590]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e591]:
+            - generic [ref=e594]: ₹64,900
+            - img [ref=e596]
+            - generic [ref=e598]:
+              - generic [ref=e599]: Upto
+              - generic [ref=e600]: ₹47,350
+              - generic [ref=e601]: Off on Exchange
+            - generic [ref=e604]: Bank Offer
+      - link "Apple iPhone 14 (Purple, 256 GB) Currently unavailable Add to Compare Apple iPhone 14 (Purple, 256 GB) 4.6 2,84,387 Ratings & 11,308 Reviews • 256 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 12MP + 12MP | 12MP Front Camera • A15 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹64,900 Bank Offer" [ref=e609] [cursor=pointer]:
+        - /url: /apple-iphone-14-purple-256-gb/p/itmb2bf402090fae?pid=MOBGHWFHQHE7ZPSB&lid=LSTMOBGHWFHQHE7ZPSBYPXODK&marketplace=FLIPKART&q=apple+iphone14&store=tyy%2F4io&srno=s_1_6&otracker=search&otracker1=search&fm=organic&iid=5adabbbb-a602-450c-bf08-23712d2959ba.MOBGHWFHQHE7ZPSB.SEARCH&ppt=None&ppn=None&ssid=5g7etnyqzk0000001781451889355&qH=a849984bb982e8e1&ov_redirect=true
+        - generic [ref=e610]:
+          - generic [ref=e611]:
+            - img "Apple iPhone 14 (Purple, 256 GB)" [ref=e614]
+            - generic: Currently unavailable
+          - generic [ref=e620]: Add to Compare
+          - img [ref=e623]
+        - generic [ref=e625]:
+          - generic [ref=e626]:
+            - generic [ref=e627]: Apple iPhone 14 (Purple, 256 GB)
+            - generic [ref=e628]:
+              - generic [ref=e630]:
+                - text: "4.6"
+                - img [ref=e631]
+              - generic [ref=e633]: 2,84,387 Ratings & 11,308 Reviews
+            - list [ref=e635]:
+              - listitem [ref=e636]: • 256 GB ROM
+              - listitem [ref=e637]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+              - listitem [ref=e638]: • 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e639]: • A15 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e640]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e641]:
+            - generic [ref=e644]: ₹64,900
+            - img [ref=e646]
+            - generic [ref=e649]: Bank Offer
+      - link "Apple iPhone 14 (Blue, 256 GB) Currently unavailable Add to Compare Apple iPhone 14 (Blue, 256 GB) 4.6 2,84,387 Ratings & 11,308 Reviews • 256 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 12MP + 12MP | 12MP Front Camera • A15 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹64,900 Upto ₹47,350 Off on Exchange Bank Offer" [ref=e654] [cursor=pointer]:
+        - /url: /apple-iphone-14-blue-256-gb/p/itm04dba659735c7?pid=MOBGHWFHD3XPKDPN&lid=LSTMOBGHWFHD3XPKDPNUH3TWL&marketplace=FLIPKART&q=apple+iphone14&store=tyy%2F4io&srno=s_1_7&otracker=search&otracker1=search&fm=organic&iid=5adabbbb-a602-450c-bf08-23712d2959ba.MOBGHWFHD3XPKDPN.SEARCH&ppt=None&ppn=None&ssid=5g7etnyqzk0000001781451889355&qH=a849984bb982e8e1&ov_redirect=true
+        - generic [ref=e655]:
+          - generic [ref=e656]:
+            - img "Apple iPhone 14 (Blue, 256 GB)" [ref=e659]
+            - generic: Currently unavailable
+          - generic [ref=e665]: Add to Compare
+          - img [ref=e668]
+        - generic [ref=e670]:
+          - generic [ref=e671]:
+            - generic [ref=e672]: Apple iPhone 14 (Blue, 256 GB)
+            - generic [ref=e673]:
+              - generic [ref=e675]:
+                - text: "4.6"
+                - img [ref=e676]
+              - generic [ref=e678]: 2,84,387 Ratings & 11,308 Reviews
+            - list [ref=e680]:
+              - listitem [ref=e681]: • 256 GB ROM
+              - listitem [ref=e682]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+              - listitem [ref=e683]: • 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e684]: • A15 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e685]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e686]:
+            - generic [ref=e689]: ₹64,900
+            - img [ref=e691]
+            - generic [ref=e693]:
+              - generic [ref=e694]: Upto
+              - generic [ref=e695]: ₹47,350
+              - generic [ref=e696]: Off on Exchange
+            - generic [ref=e699]: Bank Offer
+      - link "Apple iPhone 14 (Purple, 128 GB) Currently unavailable Add to Compare Apple iPhone 14 (Purple, 128 GB) 4.6 2,84,387 Ratings & 11,308 Reviews • 128 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 12MP + 12MP | 12MP Front Camera • A15 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹54,900 Bank Offer" [ref=e704] [cursor=pointer]:
+        - /url: /apple-iphone-14-purple-128-gb/p/itm0b581eba85e08?pid=MOBGHWFHQFSQYBFU&lid=LSTMOBGHWFHQFSQYBFUUF0OWI&marketplace=FLIPKART&q=apple+iphone14&store=tyy%2F4io&srno=s_1_8&otracker=search&otracker1=search&fm=organic&iid=5adabbbb-a602-450c-bf08-23712d2959ba.MOBGHWFHQFSQYBFU.SEARCH&ppt=None&ppn=None&ssid=5g7etnyqzk0000001781451889355&qH=a849984bb982e8e1&ov_redirect=true
+        - generic [ref=e705]:
+          - generic [ref=e706]:
+            - img "Apple iPhone 14 (Purple, 128 GB)" [ref=e709]
+            - generic: Currently unavailable
+          - generic [ref=e715]: Add to Compare
+          - img [ref=e718]
+        - generic [ref=e720]:
+          - generic [ref=e721]:
+            - generic [ref=e722]: Apple iPhone 14 (Purple, 128 GB)
+            - generic [ref=e723]:
+              - generic [ref=e725]:
+                - text: "4.6"
+                - img [ref=e726]
+              - generic [ref=e728]: 2,84,387 Ratings & 11,308 Reviews
+            - list [ref=e730]:
+              - listitem [ref=e731]: • 128 GB ROM
+              - listitem [ref=e732]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+              - listitem [ref=e733]: • 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e734]: • A15 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e735]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e736]:
+            - generic [ref=e739]: ₹54,900
+            - img [ref=e741]
+            - generic [ref=e744]: Bank Offer
+      - link "Apple iPhone 14 (Blue, 512 GB) Currently unavailable Add to Compare Apple iPhone 14 (Blue, 512 GB) 4.6 2,84,387 Ratings & 11,308 Reviews • 512 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 12MP + 12MP | 12MP Front Camera • A15 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹89,900 Bank Offer" [ref=e749] [cursor=pointer]:
+        - /url: /apple-iphone-14-blue-512-gb/p/itm6f59f7f999d00?pid=MOBGHWFHYRWUSHCF&lid=LSTMOBGHWFHYRWUSHCFXIUNTH&marketplace=FLIPKART&q=apple+iphone14&store=tyy%2F4io&srno=s_1_9&otracker=search&otracker1=search&fm=organic&iid=5adabbbb-a602-450c-bf08-23712d2959ba.MOBGHWFHYRWUSHCF.SEARCH&ppt=None&ppn=None&ssid=5g7etnyqzk0000001781451889355&qH=a849984bb982e8e1&ov_redirect=true
+        - generic [ref=e750]:
+          - generic [ref=e751]:
+            - img "Apple iPhone 14 (Blue, 512 GB)" [ref=e754]
+            - generic: Currently unavailable
+          - generic [ref=e760]: Add to Compare
+          - img [ref=e763]
+        - generic [ref=e765]:
+          - generic [ref=e766]:
+            - generic [ref=e767]: Apple iPhone 14 (Blue, 512 GB)
+            - generic [ref=e768]:
+              - generic [ref=e770]:
+                - text: "4.6"
+                - img [ref=e771]
+              - generic [ref=e773]: 2,84,387 Ratings & 11,308 Reviews
+            - list [ref=e775]:
+              - listitem [ref=e776]: • 512 GB ROM
+              - listitem [ref=e777]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+              - listitem [ref=e778]: • 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e779]: • A15 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e780]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e781]:
+            - generic [ref=e784]: ₹89,900
+            - img [ref=e786]
+            - generic [ref=e789]: Bank Offer
+      - link "Apple iPhone 14 ((PRODUCT)RED, 256 GB) Currently unavailable Add to Compare Apple iPhone 14 ((PRODUCT)RED, 256 GB) 4.6 2,84,387 Ratings & 11,308 Reviews • 256 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 12MP + 12MP | 12MP Front Camera • A15 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹64,900 Bank Offer" [ref=e794] [cursor=pointer]:
+        - /url: /apple-iphone-14-product-red-256-gb/p/itmc370e3b74a893?pid=MOBGHWFHVPXVSKNJ&lid=LSTMOBGHWFHVPXVSKNJN7AM82&marketplace=FLIPKART&q=apple+iphone14&store=tyy%2F4io&srno=s_1_10&otracker=search&otracker1=search&fm=organic&iid=5adabbbb-a602-450c-bf08-23712d2959ba.MOBGHWFHVPXVSKNJ.SEARCH&ppt=None&ppn=None&ssid=5g7etnyqzk0000001781451889355&qH=a849984bb982e8e1&ov_redirect=true
+        - generic [ref=e795]:
+          - generic [ref=e796]:
+            - img "Apple iPhone 14 ((PRODUCT)RED, 256 GB)" [ref=e799]
+            - generic: Currently unavailable
+          - generic [ref=e805]: Add to Compare
+          - img [ref=e808]
+        - generic [ref=e810]:
+          - generic [ref=e811]:
+            - generic [ref=e812]: Apple iPhone 14 ((PRODUCT)RED, 256 GB)
+            - generic [ref=e813]:
+              - generic [ref=e815]:
+                - text: "4.6"
+                - img [ref=e816]
+              - generic [ref=e818]: 2,84,387 Ratings & 11,308 Reviews
+            - list [ref=e820]:
+              - listitem [ref=e821]: • 256 GB ROM
+              - listitem [ref=e822]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+              - listitem [ref=e823]: • 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e824]: • A15 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e825]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e826]:
+            - generic [ref=e829]: ₹64,900
+            - img [ref=e831]
+            - generic [ref=e834]: Bank Offer
+      - link "Apple iPhone 14 (Midnight, 512 GB) Currently unavailable Add to Compare Apple iPhone 14 (Midnight, 512 GB) 4.6 2,84,387 Ratings & 11,308 Reviews • 512 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 12MP + 12MP | 12MP Front Camera • A15 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹89,900 Bank Offer" [ref=e839] [cursor=pointer]:
+        - /url: /apple-iphone-14-midnight-512-gb/p/itm01540a8ff03de?pid=MOBGHWFHBEMUZSBY&lid=LSTMOBGHWFHBEMUZSBYWJC9VQ&marketplace=FLIPKART&q=apple+iphone14&store=tyy%2F4io&srno=s_1_11&otracker=search&otracker1=search&fm=organic&iid=5adabbbb-a602-450c-bf08-23712d2959ba.MOBGHWFHBEMUZSBY.SEARCH&ppt=None&ppn=None&ssid=5g7etnyqzk0000001781451889355&qH=a849984bb982e8e1&ov_redirect=true
+        - generic [ref=e840]:
+          - generic [ref=e841]:
+            - img "Apple iPhone 14 (Midnight, 512 GB)" [ref=e844]
+            - generic: Currently unavailable
+          - generic [ref=e850]: Add to Compare
+          - img [ref=e853]
+        - generic [ref=e855]:
+          - generic [ref=e856]:
+            - generic [ref=e857]: Apple iPhone 14 (Midnight, 512 GB)
+            - generic [ref=e858]:
+              - generic [ref=e860]:
+                - text: "4.6"
+                - img [ref=e861]
+              - generic [ref=e863]: 2,84,387 Ratings & 11,308 Reviews
+            - list [ref=e865]:
+              - listitem [ref=e866]: • 512 GB ROM
+              - listitem [ref=e867]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+              - listitem [ref=e868]: • 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e869]: • A15 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e870]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e871]:
+            - generic [ref=e874]: ₹89,900
+            - img [ref=e876]
+            - generic [ref=e879]: Bank Offer
+      - link "Apple iPhone 14 ((PRODUCT)RED, 128 GB) Currently unavailable Add to Compare Apple iPhone 14 ((PRODUCT)RED, 128 GB) 4.6 2,84,387 Ratings & 11,308 Reviews • 128 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 12MP + 12MP | 12MP Front Camera • A15 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹54,900 Bank Offer" [ref=e884] [cursor=pointer]:
+        - /url: /apple-iphone-14-product-red-128-gb/p/itm1f78a4e1a1d76?pid=MOBGHWFHFBJVSW22&lid=LSTMOBGHWFHFBJVSW22H8TJ3V&marketplace=FLIPKART&q=apple+iphone14&store=tyy%2F4io&srno=s_1_12&otracker=search&otracker1=search&fm=organic&iid=5adabbbb-a602-450c-bf08-23712d2959ba.MOBGHWFHFBJVSW22.SEARCH&ppt=None&ppn=None&ssid=5g7etnyqzk0000001781451889355&qH=a849984bb982e8e1&ov_redirect=true
+        - generic [ref=e885]:
+          - generic [ref=e886]:
+            - img "Apple iPhone 14 ((PRODUCT)RED, 128 GB)" [ref=e889]
+            - generic: Currently unavailable
+          - generic [ref=e895]: Add to Compare
+          - img [ref=e898]
+        - generic [ref=e900]:
+          - generic [ref=e901]:
+            - generic [ref=e902]: Apple iPhone 14 ((PRODUCT)RED, 128 GB)
+            - generic [ref=e903]:
+              - generic [ref=e905]:
+                - text: "4.6"
+                - img [ref=e906]
+              - generic [ref=e908]: 2,84,387 Ratings & 11,308 Reviews
+            - list [ref=e910]:
+              - listitem [ref=e911]: • 128 GB ROM
+              - listitem [ref=e912]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+              - listitem [ref=e913]: • 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e914]: • A15 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e915]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e916]:
+            - generic [ref=e919]: ₹54,900
+            - img [ref=e921]
+            - generic [ref=e924]: Bank Offer
+      - link "Apple iPhone 14 (Starlight, 512 GB) Currently unavailable Add to Compare Apple iPhone 14 (Starlight, 512 GB) 4.6 2,84,387 Ratings & 11,308 Reviews • 512 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 12MP + 12MP | 12MP Front Camera • A15 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹89,900 Upto ₹47,350 Off on Exchange Bank Offer" [ref=e929] [cursor=pointer]:
+        - /url: /apple-iphone-14-starlight-512-gb/p/itm84f832806211e?pid=MOBGHWFHPUUFJJCA&lid=LSTMOBGHWFHPUUFJJCAZ2XHDI&marketplace=FLIPKART&q=apple+iphone14&store=tyy%2F4io&srno=s_1_13&otracker=search&otracker1=search&fm=organic&iid=5adabbbb-a602-450c-bf08-23712d2959ba.MOBGHWFHPUUFJJCA.SEARCH&ppt=None&ppn=None&ssid=5g7etnyqzk0000001781451889355&qH=a849984bb982e8e1&ov_redirect=true
+        - generic [ref=e930]:
+          - generic [ref=e931]:
+            - img "Apple iPhone 14 (Starlight, 512 GB)" [ref=e934]
+            - generic: Currently unavailable
+          - generic [ref=e940]: Add to Compare
+          - img [ref=e943]
+        - generic [ref=e945]:
+          - generic [ref=e946]:
+            - generic [ref=e947]: Apple iPhone 14 (Starlight, 512 GB)
+            - generic [ref=e948]:
+              - generic [ref=e950]:
+                - text: "4.6"
+                - img [ref=e951]
+              - generic [ref=e953]: 2,84,387 Ratings & 11,308 Reviews
+            - list [ref=e955]:
+              - listitem [ref=e956]: • 512 GB ROM
+              - listitem [ref=e957]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+              - listitem [ref=e958]: • 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e959]: • A15 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e960]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e961]:
+            - generic [ref=e964]: ₹89,900
+            - img [ref=e966]
+            - generic [ref=e968]:
+              - generic [ref=e969]: Upto
+              - generic [ref=e970]: ₹47,350
+              - generic [ref=e971]: Off on Exchange
+            - generic [ref=e974]: Bank Offer
+      - link "Apple iPhone 14 (Red, 512 GB) Currently unavailable Add to Compare Apple iPhone 14 (Red, 512 GB) 4.6 2,84,387 Ratings & 11,308 Reviews • 512 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 12MP + 12MP | 12MP Front Camera • A15 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹89,900 Bank Offer" [ref=e979] [cursor=pointer]:
+        - /url: /apple-iphone-14-red-512-gb/p/itm9b970895ea4d5?pid=MOBGHWFHS87QNJ32&lid=LSTMOBGHWFHS87QNJ32W9IACJ&marketplace=FLIPKART&q=apple+iphone14&store=tyy%2F4io&srno=s_1_14&otracker=search&otracker1=search&fm=organic&iid=5adabbbb-a602-450c-bf08-23712d2959ba.MOBGHWFHS87QNJ32.SEARCH&ppt=None&ppn=None&ssid=5g7etnyqzk0000001781451889355&qH=a849984bb982e8e1&ov_redirect=true
+        - generic [ref=e980]:
+          - generic [ref=e981]:
+            - img "Apple iPhone 14 (Red, 512 GB)" [ref=e984]
+            - generic: Currently unavailable
+          - generic [ref=e990]: Add to Compare
+          - img [ref=e993]
+        - generic [ref=e995]:
+          - generic [ref=e996]:
+            - generic [ref=e997]: Apple iPhone 14 (Red, 512 GB)
+            - generic [ref=e998]:
+              - generic [ref=e1000]:
+                - text: "4.6"
+                - img [ref=e1001]
+              - generic [ref=e1003]: 2,84,387 Ratings & 11,308 Reviews
+            - list [ref=e1005]:
+              - listitem [ref=e1006]: • 512 GB ROM
+              - listitem [ref=e1007]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+              - listitem [ref=e1008]: • 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e1009]: • A15 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e1010]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e1011]:
+            - generic [ref=e1014]: ₹89,900
+            - img [ref=e1016]
+            - generic [ref=e1019]: Bank Offer
+      - link "Apple iPhone 14 (Yellow, 256 GB) Currently unavailable Add to Compare Apple iPhone 14 (Yellow, 256 GB) 4.6 2,84,387 Ratings & 11,308 Reviews • 256 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 12MP + 12MP | 12MP Front Camera • A15 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹64,900 Bank Offer" [ref=e1024] [cursor=pointer]:
+        - /url: /apple-iphone-14-yellow-256-gb/p/itm045fb5b09118e?pid=MOBGNHT7J3HGB2CZ&lid=LSTMOBGNHT7J3HGB2CZNSXRL1&marketplace=FLIPKART&q=apple+iphone14&store=tyy%2F4io&srno=s_1_15&otracker=search&otracker1=search&fm=organic&iid=5adabbbb-a602-450c-bf08-23712d2959ba.MOBGNHT7J3HGB2CZ.SEARCH&ppt=None&ppn=None&ssid=5g7etnyqzk0000001781451889355&qH=a849984bb982e8e1&ov_redirect=true
+        - generic [ref=e1025]:
+          - generic [ref=e1026]:
+            - img "Apple iPhone 14 (Yellow, 256 GB)" [ref=e1029]
+            - generic: Currently unavailable
+          - generic [ref=e1035]: Add to Compare
+          - img [ref=e1038]
+        - generic [ref=e1040]:
+          - generic [ref=e1041]:
+            - generic [ref=e1042]: Apple iPhone 14 (Yellow, 256 GB)
+            - generic [ref=e1043]:
+              - generic [ref=e1045]:
+                - text: "4.6"
+                - img [ref=e1046]
+              - generic [ref=e1048]: 2,84,387 Ratings & 11,308 Reviews
+            - list [ref=e1050]:
+              - listitem [ref=e1051]: • 256 GB ROM
+              - listitem [ref=e1052]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+              - listitem [ref=e1053]: • 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e1054]: • A15 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e1055]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e1056]:
+            - generic [ref=e1059]: ₹64,900
+            - img [ref=e1061]
+            - generic [ref=e1064]: Bank Offer
+      - link "Apple iPhone 14 (Purple, 512 GB) Currently unavailable Add to Compare Apple iPhone 14 (Purple, 512 GB) 4.6 2,84,387 Ratings & 11,308 Reviews • 512 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 12MP + 12MP | 12MP Front Camera • A15 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹89,900 Bank Offer" [ref=e1069] [cursor=pointer]:
+        - /url: /apple-iphone-14-purple-512-gb/p/itm97a1b385891d0?pid=MOBGHWFHG9HQHTU7&lid=LSTMOBGHWFHG9HQHTU7OVRY05&marketplace=FLIPKART&q=apple+iphone14&store=tyy%2F4io&srno=s_1_16&otracker=search&otracker1=search&fm=organic&iid=5adabbbb-a602-450c-bf08-23712d2959ba.MOBGHWFHG9HQHTU7.SEARCH&ppt=None&ppn=None&ssid=5g7etnyqzk0000001781451889355&qH=a849984bb982e8e1&ov_redirect=true
+        - generic [ref=e1070]:
+          - generic [ref=e1071]:
+            - img "Apple iPhone 14 (Purple, 512 GB)" [ref=e1074]
+            - generic: Currently unavailable
+          - generic [ref=e1080]: Add to Compare
+          - img [ref=e1083]
+        - generic [ref=e1085]:
+          - generic [ref=e1086]:
+            - generic [ref=e1087]: Apple iPhone 14 (Purple, 512 GB)
+            - generic [ref=e1088]:
+              - generic [ref=e1090]:
+                - text: "4.6"
+                - img [ref=e1091]
+              - generic [ref=e1093]: 2,84,387 Ratings & 11,308 Reviews
+            - list [ref=e1095]:
+              - listitem [ref=e1096]: • 512 GB ROM
+              - listitem [ref=e1097]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+              - listitem [ref=e1098]: • 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e1099]: • A15 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e1100]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e1101]:
+            - generic [ref=e1104]: ₹89,900
+            - img [ref=e1106]
+            - generic [ref=e1109]: Bank Offer
+      - link "Apple iPhone 14 Plus (Yellow, 128 GB) Currently unavailable Add to Compare Apple iPhone 14 Plus (Yellow, 128 GB) 4.6 80,921 Ratings & 4,623 Reviews • 128 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 12MP + 12MP | 12MP Front Camera • A15 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹69,900 Upto ₹47,350 Off on Exchange Bank Offer" [ref=e1114] [cursor=pointer]:
+        - /url: /apple-iphone-14-plus-yellow-128-gb/p/itme660a4bfe5de6?pid=MOBGNHT7DSWFGNRJ&lid=LSTMOBGNHT7DSWFGNRJFCNDHY&marketplace=FLIPKART&q=apple+iphone14&store=tyy%2F4io&srno=s_1_17&otracker=search&otracker1=search&fm=organic&iid=5adabbbb-a602-450c-bf08-23712d2959ba.MOBGNHT7DSWFGNRJ.SEARCH&ppt=None&ppn=None&ssid=5g7etnyqzk0000001781451889355&qH=a849984bb982e8e1&ov_redirect=true
+        - generic [ref=e1115]:
+          - generic [ref=e1116]:
+            - img "Apple iPhone 14 Plus (Yellow, 128 GB)" [ref=e1119]
+            - generic: Currently unavailable
+          - generic [ref=e1125]: Add to Compare
+          - img [ref=e1128]
+        - generic [ref=e1130]:
+          - generic [ref=e1131]:
+            - generic [ref=e1132]: Apple iPhone 14 Plus (Yellow, 128 GB)
+            - generic [ref=e1133]:
+              - generic [ref=e1135]:
+                - text: "4.6"
+                - img [ref=e1136]
+              - generic [ref=e1138]: 80,921 Ratings & 4,623 Reviews
+            - list [ref=e1140]:
+              - listitem [ref=e1141]: • 128 GB ROM
+              - listitem [ref=e1142]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e1143]: • 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e1144]: • A15 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e1145]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e1146]:
+            - generic [ref=e1149]: ₹69,900
+            - img [ref=e1151]
+            - generic [ref=e1153]:
+              - generic [ref=e1154]: Upto
+              - generic [ref=e1155]: ₹47,350
+              - generic [ref=e1156]: Off on Exchange
+            - generic [ref=e1159]: Bank Offer
+      - link "Apple iPhone 14 Plus (Starlight, 256 GB) Currently unavailable Add to Compare Apple iPhone 14 Plus (Starlight, 256 GB) 4.6 80,921 Ratings & 4,623 Reviews • 256 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 12MP + 12MP | 12MP Front Camera • A15 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹79,900 Bank Offer" [ref=e1164] [cursor=pointer]:
+        - /url: /apple-iphone-14-plus-starlight-256-gb/p/itm8ee001dd954a2?pid=MOBGHWFHQGM9B4EU&lid=LSTMOBGHWFHQGM9B4EULCGGOM&marketplace=FLIPKART&q=apple+iphone14&store=tyy%2F4io&srno=s_1_18&otracker=search&otracker1=search&fm=organic&iid=5adabbbb-a602-450c-bf08-23712d2959ba.MOBGHWFHQGM9B4EU.SEARCH&ppt=None&ppn=None&ssid=5g7etnyqzk0000001781451889355&qH=a849984bb982e8e1&ov_redirect=true
+        - generic [ref=e1165]:
+          - generic [ref=e1166]:
+            - img "Apple iPhone 14 Plus (Starlight, 256 GB)" [ref=e1169]
+            - generic: Currently unavailable
+          - generic [ref=e1175]: Add to Compare
+          - img [ref=e1178]
+        - generic [ref=e1180]:
+          - generic [ref=e1181]:
+            - generic [ref=e1182]: Apple iPhone 14 Plus (Starlight, 256 GB)
+            - generic [ref=e1183]:
+              - generic [ref=e1185]:
+                - text: "4.6"
+                - img [ref=e1186]
+              - generic [ref=e1188]: 80,921 Ratings & 4,623 Reviews
+            - list [ref=e1190]:
+              - listitem [ref=e1191]: • 256 GB ROM
+              - listitem [ref=e1192]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e1193]: • 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e1194]: • A15 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e1195]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e1196]:
+            - generic [ref=e1199]: ₹79,900
+            - img [ref=e1201]
+            - generic [ref=e1204]: Bank Offer
+      - link "Apple iPhone 14 Plus (Purple, 128 GB) Currently unavailable Add to Compare Apple iPhone 14 Plus (Purple, 128 GB) 4.6 80,921 Ratings & 4,623 Reviews • 128 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 12MP + 12MP | 12MP Front Camera • A15 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹69,900 Bank Offer" [ref=e1209] [cursor=pointer]:
+        - /url: /apple-iphone-14-plus-purple-128-gb/p/itm7a759a472d863?pid=MOBGHWFHYFJWRHAG&lid=LSTMOBGHWFHYFJWRHAGU5GXS3&marketplace=FLIPKART&q=apple+iphone14&store=tyy%2F4io&srno=s_1_19&otracker=search&otracker1=search&fm=organic&iid=5adabbbb-a602-450c-bf08-23712d2959ba.MOBGHWFHYFJWRHAG.SEARCH&ppt=None&ppn=None&ssid=5g7etnyqzk0000001781451889355&qH=a849984bb982e8e1&ov_redirect=true
+        - generic [ref=e1210]:
+          - generic [ref=e1211]:
+            - img "Apple iPhone 14 Plus (Purple, 128 GB)" [ref=e1214]
+            - generic: Currently unavailable
+          - generic [ref=e1220]: Add to Compare
+          - img [ref=e1223]
+        - generic [ref=e1225]:
+          - generic [ref=e1226]:
+            - generic [ref=e1227]: Apple iPhone 14 Plus (Purple, 128 GB)
+            - generic [ref=e1228]:
+              - generic [ref=e1230]:
+                - text: "4.6"
+                - img [ref=e1231]
+              - generic [ref=e1233]: 80,921 Ratings & 4,623 Reviews
+            - list [ref=e1235]:
+              - listitem [ref=e1236]: • 128 GB ROM
+              - listitem [ref=e1237]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e1238]: • 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e1239]: • A15 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e1240]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e1241]:
+            - generic [ref=e1244]: ₹69,900
+            - img [ref=e1246]
+            - generic [ref=e1249]: Bank Offer
+      - link "Apple iPhone 14 Plus (Yellow, 256 GB) Currently unavailable Add to Compare Apple iPhone 14 Plus (Yellow, 256 GB) 4.6 80,921 Ratings & 4,623 Reviews • 256 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 12MP + 12MP | 12MP Front Camera • A15 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹79,900 Bank Offer" [ref=e1254] [cursor=pointer]:
+        - /url: /apple-iphone-14-plus-yellow-256-gb/p/itma3eca99a370df?pid=MOBGNHT7DMZ3DZPJ&lid=LSTMOBGNHT7DMZ3DZPJT7XGHX&marketplace=FLIPKART&q=apple+iphone14&store=tyy%2F4io&srno=s_1_20&otracker=search&otracker1=search&fm=organic&iid=5adabbbb-a602-450c-bf08-23712d2959ba.MOBGNHT7DMZ3DZPJ.SEARCH&ppt=None&ppn=None&ssid=5g7etnyqzk0000001781451889355&qH=a849984bb982e8e1&ov_redirect=true
+        - generic [ref=e1255]:
+          - generic [ref=e1256]:
+            - img "Apple iPhone 14 Plus (Yellow, 256 GB)" [ref=e1259]
+            - generic: Currently unavailable
+          - generic [ref=e1265]: Add to Compare
+          - img [ref=e1268]
+        - generic [ref=e1270]:
+          - generic [ref=e1271]:
+            - generic [ref=e1272]: Apple iPhone 14 Plus (Yellow, 256 GB)
+            - generic [ref=e1273]:
+              - generic [ref=e1275]:
+                - text: "4.6"
+                - img [ref=e1276]
+              - generic [ref=e1278]: 80,921 Ratings & 4,623 Reviews
+            - list [ref=e1280]:
+              - listitem [ref=e1281]: • 256 GB ROM
+              - listitem [ref=e1282]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e1283]: • 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e1284]: • A15 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e1285]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e1286]:
+            - generic [ref=e1289]: ₹79,900
+            - img [ref=e1291]
+            - generic [ref=e1294]: Bank Offer
+      - link "Apple iPhone 14 Plus (Yellow, 512 GB) Add to Compare Apple iPhone 14 Plus (Yellow, 512 GB) 4.6 80,921 Ratings & 4,623 Reviews • 512 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 12MP + 12MP | 12MP Front Camera • A15 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹99,900 Only 1 left Bank Offer" [ref=e1299] [cursor=pointer]:
+        - /url: /apple-iphone-14-plus-yellow-512-gb/p/itme8304267a4605?pid=MOBGNHT7J4NZUWZ3&lid=LSTMOBGNHT7J4NZUWZ385LZGM&marketplace=FLIPKART&q=apple+iphone14&store=tyy%2F4io&spotlightTagId=default_TrendingId_tyy%2F4io&srno=s_1_21&otracker=search&otracker1=search&fm=organic&iid=5adabbbb-a602-450c-bf08-23712d2959ba.MOBGNHT7J4NZUWZ3.SEARCH&ppt=None&ppn=None&ssid=5g7etnyqzk0000001781451889355&qH=a849984bb982e8e1&ov_redirect=true
+        - generic [ref=e1300]:
+          - img "Apple iPhone 14 Plus (Yellow, 512 GB)" [ref=e1304]
+          - generic [ref=e1310]: Add to Compare
+          - img [ref=e1313]
+        - generic [ref=e1315]:
+          - generic [ref=e1316]:
+            - generic [ref=e1317]: Apple iPhone 14 Plus (Yellow, 512 GB)
+            - generic [ref=e1318]:
+              - generic [ref=e1320]:
+                - text: "4.6"
+                - img [ref=e1321]
+              - generic [ref=e1323]: 80,921 Ratings & 4,623 Reviews
+            - list [ref=e1325]:
+              - listitem [ref=e1326]: • 512 GB ROM
+              - listitem [ref=e1327]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e1328]: • 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e1329]: • A15 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e1330]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e1331]:
+            - generic [ref=e1334]: ₹99,900
+            - img [ref=e1336]
+            - generic [ref=e1339]: Only 1 left
+            - generic [ref=e1342]: Bank Offer
+      - link "Apple iPhone 14 Plus (Blue, 128 GB) Add to Compare Apple iPhone 14 Plus (Blue, 128 GB) 4.6 80,921 Ratings & 4,623 Reviews • 128 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 12MP + 12MP | 12MP Front Camera • A15 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹69,900 Only 1 left Bank Offer" [ref=e1347] [cursor=pointer]:
+        - /url: /apple-iphone-14-plus-blue-128-gb/p/itmac8385391b02b?pid=MOBGHWFHUYWGB5F2&lid=LSTMOBGHWFHUYWGB5F2C3VF10&marketplace=FLIPKART&q=apple+iphone14&store=tyy%2F4io&srno=s_1_22&otracker=search&otracker1=search&fm=organic&iid=5adabbbb-a602-450c-bf08-23712d2959ba.MOBGHWFHUYWGB5F2.SEARCH&ppt=None&ppn=None&ssid=5g7etnyqzk0000001781451889355&qH=a849984bb982e8e1&ov_redirect=true
+        - generic [ref=e1348]:
+          - img "Apple iPhone 14 Plus (Blue, 128 GB)" [ref=e1352]
+          - generic [ref=e1358]: Add to Compare
+          - img [ref=e1361]
+        - generic [ref=e1363]:
+          - generic [ref=e1364]:
+            - generic [ref=e1365]: Apple iPhone 14 Plus (Blue, 128 GB)
+            - generic [ref=e1366]:
+              - generic [ref=e1368]:
+                - text: "4.6"
+                - img [ref=e1369]
+              - generic [ref=e1371]: 80,921 Ratings & 4,623 Reviews
+            - list [ref=e1373]:
+              - listitem [ref=e1374]: • 128 GB ROM
+              - listitem [ref=e1375]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e1376]: • 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e1377]: • A15 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e1378]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e1379]:
+            - generic [ref=e1382]: ₹69,900
+            - img [ref=e1384]
+            - generic [ref=e1387]: Only 1 left
+            - generic [ref=e1390]: Bank Offer
+      - link "Apple iPhone 14 Plus (Midnight, 128 GB) Currently unavailable Add to Compare Apple iPhone 14 Plus (Midnight, 128 GB) 4.6 80,921 Ratings & 4,623 Reviews • 128 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 12MP + 12MP | 12MP Front Camera • A15 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹69,900 Upto ₹47,350 Off on Exchange Bank Offer" [ref=e1395] [cursor=pointer]:
+        - /url: /apple-iphone-14-plus-midnight-128-gb/p/itm4199ea6bcd38b?pid=MOBGHWFH3JX6NWWY&lid=LSTMOBGHWFH3JX6NWWYMPOXPI&marketplace=FLIPKART&q=apple+iphone14&store=tyy%2F4io&srno=s_1_23&otracker=search&otracker1=search&fm=organic&iid=5adabbbb-a602-450c-bf08-23712d2959ba.MOBGHWFH3JX6NWWY.SEARCH&ppt=None&ppn=None&ssid=5g7etnyqzk0000001781451889355&qH=a849984bb982e8e1&ov_redirect=true
+        - generic [ref=e1396]:
+          - generic [ref=e1397]:
+            - img "Apple iPhone 14 Plus (Midnight, 128 GB)" [ref=e1400]
+            - generic: Currently unavailable
+          - generic [ref=e1406]: Add to Compare
+          - img [ref=e1409]
+        - generic [ref=e1411]:
+          - generic [ref=e1412]:
+            - generic [ref=e1413]: Apple iPhone 14 Plus (Midnight, 128 GB)
+            - generic [ref=e1414]:
+              - generic [ref=e1416]:
+                - text: "4.6"
+                - img [ref=e1417]
+              - generic [ref=e1419]: 80,921 Ratings & 4,623 Reviews
+            - list [ref=e1421]:
+              - listitem [ref=e1422]: • 128 GB ROM
+              - listitem [ref=e1423]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e1424]: • 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e1425]: • A15 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e1426]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e1427]:
+            - generic [ref=e1430]: ₹69,900
+            - img [ref=e1432]
+            - generic [ref=e1434]:
+              - generic [ref=e1435]: Upto
+              - generic [ref=e1436]: ₹47,350
+              - generic [ref=e1437]: Off on Exchange
+            - generic [ref=e1440]: Bank Offer
+      - link "Apple iPhone 14 Plus (Midnight, 512 GB) Currently unavailable Add to Compare Apple iPhone 14 Plus (Midnight, 512 GB) 4.6 80,921 Ratings & 4,623 Reviews • 512 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 12MP + 12MP | 12MP Front Camera • A15 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹99,900 Bank Offer" [ref=e1445] [cursor=pointer]:
+        - /url: /apple-iphone-14-plus-midnight-512-gb/p/itmba1df8d8397fb?pid=MOBGHWFHDH5HTS54&lid=LSTMOBGHWFHDH5HTS54RLBSJP&marketplace=FLIPKART&q=apple+iphone14&store=tyy%2F4io&srno=s_1_24&otracker=search&otracker1=search&fm=organic&iid=5adabbbb-a602-450c-bf08-23712d2959ba.MOBGHWFHDH5HTS54.SEARCH&ppt=None&ppn=None&ssid=5g7etnyqzk0000001781451889355&qH=a849984bb982e8e1&ov_redirect=true
+        - generic [ref=e1446]:
+          - generic [ref=e1447]:
+            - img "Apple iPhone 14 Plus (Midnight, 512 GB)" [ref=e1450]
+            - generic: Currently unavailable
+          - generic [ref=e1456]: Add to Compare
+          - img [ref=e1459]
+        - generic [ref=e1461]:
+          - generic [ref=e1462]:
+            - generic [ref=e1463]: Apple iPhone 14 Plus (Midnight, 512 GB)
+            - generic [ref=e1464]:
+              - generic [ref=e1466]:
+                - text: "4.6"
+                - img [ref=e1467]
+              - generic [ref=e1469]: 80,921 Ratings & 4,623 Reviews
+            - list [ref=e1471]:
+              - listitem [ref=e1472]: • 512 GB ROM
+              - listitem [ref=e1473]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e1474]: • 12MP + 12MP | 12MP Front Camera
+              - listitem [ref=e1475]: • A15 Bionic Chip, 6 Core Processor Processor
+              - listitem [ref=e1476]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+          - generic [ref=e1477]:
+            - generic [ref=e1480]: ₹99,900
+            - img [ref=e1482]
+            - generic [ref=e1485]: Bank Offer
+      - generic [ref=e1488]:
+        - generic [ref=e1489]: Page 1 of 57
+        - navigation [ref=e1490]:
+          - link "1" [ref=e1491] [cursor=pointer]:
+            - /url: /search?q=apple+iphone14&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&page=1
+          - link "2" [ref=e1492] [cursor=pointer]:
+            - /url: /search?q=apple+iphone14&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&page=2
+          - link "3" [ref=e1493] [cursor=pointer]:
+            - /url: /search?q=apple+iphone14&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&page=3
+          - link "4" [ref=e1494] [cursor=pointer]:
+            - /url: /search?q=apple+iphone14&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&page=4
+          - link "5" [ref=e1495] [cursor=pointer]:
+            - /url: /search?q=apple+iphone14&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&page=5
+          - link "6" [ref=e1496] [cursor=pointer]:
+            - /url: /search?q=apple+iphone14&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&page=6
+          - link "7" [ref=e1497] [cursor=pointer]:
+            - /url: /search?q=apple+iphone14&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&page=7
+          - link "8" [ref=e1498] [cursor=pointer]:
+            - /url: /search?q=apple+iphone14&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&page=8
+          - link "9" [ref=e1499] [cursor=pointer]:
+            - /url: /search?q=apple+iphone14&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&page=9
+          - link "10" [ref=e1500] [cursor=pointer]:
+            - /url: /search?q=apple+iphone14&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&page=10
+          - link "Next" [ref=e1501] [cursor=pointer]:
+            - /url: /search?q=apple+iphone14&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&page=2
+      - generic [ref=e1503]:
+        - text: Did you find what you were looking for?
+        - generic [ref=e1504]:
+          - generic [ref=e1505] [cursor=pointer]: "Yes"
+          - generic [ref=e1506] [cursor=pointer]: "No"
+  - contentinfo [ref=e1507]:
+    - generic [ref=e1509]:
+      - generic [ref=e1510]:
+        - generic [ref=e1511]:
+          - generic [ref=e1512]: ABOUT
+          - link "Contact Us" [ref=e1513] [cursor=pointer]:
+            - /url: /helpcentre?otracker=footer_navlinks
+          - link "About Us" [ref=e1514] [cursor=pointer]:
+            - /url: https://corporate.flipkart.net/corporate-home
+          - link "Careers" [ref=e1515] [cursor=pointer]:
+            - /url: https://www.flipkartcareers.com/?otracker=footer_navlinks
+          - link "Flipkart Stories" [ref=e1516] [cursor=pointer]:
+            - /url: http://stories.flipkart.com/?otracker=footer_navlinks
+          - link "Press" [ref=e1517] [cursor=pointer]:
+            - /url: http://stories.flipkart.com/category/top-stories/news/
+          - link "Corporate Information" [ref=e1518] [cursor=pointer]:
+            - /url: /corporate-information
+        - generic [ref=e1519]:
+          - generic [ref=e1520]: GROUP COMPANIES
+          - link "Myntra" [ref=e1521] [cursor=pointer]:
+            - /url: https://www.myntra.com/
+          - link "Cleartrip" [ref=e1522] [cursor=pointer]:
+            - /url: https://www.cleartrip.com/
+          - link "Shopsy" [ref=e1523] [cursor=pointer]:
+            - /url: https://www.shopsy.in/
+        - generic [ref=e1524]:
+          - generic [ref=e1525]: HELP
+          - link "Payments" [ref=e1526] [cursor=pointer]:
+            - /url: /pages/payments
+          - link "Shipping" [ref=e1527] [cursor=pointer]:
+            - /url: /pages/shipping
+          - link "Cancellation & Returns" [ref=e1528] [cursor=pointer]:
+            - /url: /helpcentre?catalog=55c9c6edb000002e002c1701&view=CATALOG
+          - link "FAQ" [ref=e1529] [cursor=pointer]:
+            - /url: /helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG
+        - generic [ref=e1530]:
+          - generic [ref=e1531]: CONSUMER POLICY
+          - link "Cancellation & Returns" [ref=e1532] [cursor=pointer]:
+            - /url: /pages/returnpolicy?otracker=footer_navlinks
+          - link "Terms Of Use" [ref=e1533] [cursor=pointer]:
+            - /url: /pages/terms?otracker=footer_navlinks
+          - link "Security" [ref=e1534] [cursor=pointer]:
+            - /url: /pages/paymentsecurity?otracker=footer_navlinks
+          - link "Privacy" [ref=e1535] [cursor=pointer]:
+            - /url: /pages/privacypolicy?otracker=footer_navlinks
+          - link "Sitemap" [ref=e1536] [cursor=pointer]:
+            - /url: /sitemap?otracker=footer_navlinks
+          - link "Grievance Redressal" [ref=e1537] [cursor=pointer]:
+            - /url: /pages/grievance-redressal-mechanism?otracker=footer_navlinks
+          - link "EPR Compliance" [ref=e1538] [cursor=pointer]:
+            - /url: /pages/ewaste-compliance-tnc?otracker=footer_navlinks
+          - link "FSSAI Food Safety Connect App" [ref=e1539] [cursor=pointer]:
+            - /url: https://fssai.gov.in/cms/food-safety-connect.php
+        - generic [ref=e1541]:
+          - generic [ref=e1542]: "Mail Us:"
+          - generic [ref=e1545]:
+            - paragraph [ref=e1546]: Flipkart Internet Private Limited,
+            - paragraph [ref=e1547]: Buildings Alyssa, Begonia &
+            - paragraph [ref=e1548]: Clove Embassy Tech Village,
+            - paragraph [ref=e1549]: Outer Ring Road, Devarabeesanahalli Village,
+            - paragraph [ref=e1550]: Bengaluru, 560103,
+            - paragraph [ref=e1551]: Karnataka, India
+          - generic [ref=e1552]: Social
+          - generic [ref=e1553]:
+            - link [ref=e1555] [cursor=pointer]:
+              - /url: https://www.facebook.com/flipkart
+              - img [ref=e1556]
+            - link [ref=e1558] [cursor=pointer]:
+              - /url: https://www.twitter.com/flipkart
+              - img [ref=e1559]
+            - link [ref=e1561] [cursor=pointer]:
+              - /url: https://www.youtube.com/flipkart
+              - img [ref=e1562]
+            - link [ref=e1564] [cursor=pointer]:
+              - /url: https://www.instagram.com/flipkart
+              - img [ref=e1565]
+        - generic [ref=e1567]:
+          - generic [ref=e1568]: "Registered Office Address:"
+          - generic [ref=e1571]:
+            - paragraph [ref=e1572]: Flipkart Internet Private Limited,
+            - paragraph [ref=e1573]: Buildings Alyssa, Begonia &
+            - paragraph [ref=e1574]: Clove Embassy Tech Village,
+            - paragraph [ref=e1575]: Outer Ring Road, Devarabeesanahalli Village,
+            - paragraph [ref=e1576]: Bengaluru, 560103,
+            - paragraph [ref=e1577]: Karnataka, India
+            - paragraph [ref=e1578]: "CIN : U51109KA2012PTC066107"
+            - paragraph [ref=e1579]:
+              - text: "Telephone:"
+              - link "044-45614700" [ref=e1580] [cursor=pointer]:
+                - /url: tel:044-45614700
+              - text: /
+              - link "044-67415800" [ref=e1581] [cursor=pointer]:
+                - /url: tel:044-67415800
+      - generic [ref=e1583]:
+        - generic [ref=e1584]:
+          - img [ref=e1585]
+          - link "Become a Seller" [ref=e1586] [cursor=pointer]:
+            - /url: https://seller.flipkart.com/?utm_source=fkwebsite&utm_medium=websitedirect
+        - generic [ref=e1587]:
+          - img [ref=e1588]
+          - text: Advertise
+        - generic [ref=e1589]:
+          - img [ref=e1590]
+          - link "Gift Cards" [ref=e1591] [cursor=pointer]:
+            - /url: /the-gift-card-store?otracker=footer_navlinks
+        - generic [ref=e1592]:
+          - img [ref=e1593]
+          - link "Help Center" [ref=e1594] [cursor=pointer]:
+            - /url: /helpcentre?otracker=footer_navlinks
+        - generic [ref=e1595]: © 2007-2026 Flipkart.com
+        - img [ref=e1596]
+```

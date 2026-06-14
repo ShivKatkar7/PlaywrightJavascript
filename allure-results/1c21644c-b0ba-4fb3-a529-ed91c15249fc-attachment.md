@@ -1,0 +1,1325 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: flipkart.spec.js >> Flipkart placeorder automation
+- Location: tests/flipkart.spec.js:3:1
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e7]:
+    - generic [ref=e9]:
+      - link "Flipkart" [ref=e10] [cursor=pointer]:
+        - /url: /
+        - img "Flipkart" [ref=e11]
+      - link "Explore Plus" [ref=e12] [cursor=pointer]:
+        - /url: /plus
+        - text: Explore Plus
+        - img [ref=e13]
+    - generic [ref=e16]:
+      - textbox "Search for products, brands and more" [ref=e18]: apple iphone 16 ultramarine 128 gb
+      - button [ref=e19] [cursor=pointer]:
+        - img [ref=e20]
+    - link "Login" [ref=e28] [cursor=pointer]:
+      - /url: /account/login?ret=/search%3Fq%3Dapple%2Biphone%2B16%2Bultramarine%2B128%2Bgb%26sid%3Dtyy%252C4io%26as%3Don%26as-show%3Don%26otracker%3DAS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps%26otracker1%3DAS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps%26as-pos%3D2%26as-type%3DRECENT%26suggestionId%3Dapple%2Biphone%2B16%2Bultramarine%2B128%2Bgb%257CMobiles%26requestId%3D787a8f21-f774-4517-b0fe-5fa04625b79e%26as-searchtext%3Dapple%2520iphone%2520ul
+    - link "Become a Seller" [ref=e30] [cursor=pointer]:
+      - /url: https://seller.flipkart.com/sell-online/?utm_source=fkwebsite&utm_medium=websitedirect
+      - generic [ref=e31]: Become a Seller
+    - generic [ref=e33] [cursor=pointer]:
+      - generic [ref=e36]: More
+      - img [ref=e37]
+    - link "Cart" [ref=e42] [cursor=pointer]:
+      - /url: /viewcart?exploreMode=true&preference=FLIPKART
+      - img [ref=e43]
+      - generic [ref=e45]: Cart
+  - generic [ref=e50]:
+    - generic [ref=e51] [cursor=pointer]:
+      - text: Electronics
+      - img [ref=e52]
+    - generic [ref=e54] [cursor=pointer]:
+      - text: TVs & Appliances
+      - img [ref=e55]
+    - generic [ref=e57] [cursor=pointer]:
+      - text: Men
+      - img [ref=e58]
+    - generic [ref=e60] [cursor=pointer]:
+      - text: Women
+      - img [ref=e61]
+    - generic [ref=e63] [cursor=pointer]:
+      - text: Baby & Kids
+      - img [ref=e64]
+    - generic [ref=e66] [cursor=pointer]:
+      - text: Home & Furniture
+      - img [ref=e67]
+    - generic [ref=e69] [cursor=pointer]:
+      - text: Sports, Books & More
+      - img [ref=e70]
+    - link "Flights" [ref=e72] [cursor=pointer]:
+      - /url: /travel/flights?otracker=nmenu_Flights
+    - link "Offer Zone" [ref=e73] [cursor=pointer]:
+      - /url: /offers-list/top-deals?screen=dynamic&pk=themeViews%3DDT-OMU-A2%3ADT-OMU~widgetType%3DdealCard~contentType%3Dneo&otracker=nmenu_offer-zone
+  - generic [ref=e74]:
+    - generic [ref=e75]:
+      - generic [ref=e77]:
+        - generic [ref=e79]:
+          - generic [ref=e82]: Filters
+          - generic [ref=e84]:
+            - generic [ref=e85]: CATEGORIES
+            - generic [ref=e87]:
+              - img [ref=e89] [cursor=pointer]
+              - link "Mobiles & Accessories" [ref=e91] [cursor=pointer]:
+                - /url: /mobiles-accessories/pr?sid=tyy&q=apple+iphone+16+ultramarine+128+gb&otracker=categorytree
+            - generic [ref=e93]:
+              - img [ref=e95] [cursor=pointer]
+              - link "Mobiles" [ref=e97] [cursor=pointer]:
+                - /url: /mobiles/pr?sid=tyy,4io&q=apple+iphone+16+ultramarine+128+gb&otracker=categorytree
+          - generic [ref=e98]:
+            - generic [ref=e100]: Price
+            - generic [ref=e112]:
+              - generic [ref=e113]: .
+              - generic [ref=e114]: .
+              - generic [ref=e115]: .
+              - generic [ref=e116]: .
+              - generic [ref=e117]: .
+              - generic: .
+            - generic [ref=e118]:
+              - combobox [ref=e120]:
+                - option "Min" [selected]
+                - option "₹10000"
+                - option "₹15000"
+                - option "₹20000"
+                - option "₹30000"
+              - generic [ref=e121]: to
+              - combobox [ref=e123]:
+                - option "₹10000"
+                - option "₹15000"
+                - option "₹20000"
+                - option "₹30000"
+                - option "₹30000+" [selected]
+          - generic [ref=e124]:
+            - generic [ref=e125] [cursor=pointer]:
+              - generic [ref=e126]: Brand
+              - img [ref=e127]
+            - generic "Apple" [ref=e131] [cursor=pointer]:
+              - generic [ref=e135]: Apple
+          - generic [ref=e136]:
+            - img [ref=e141] [cursor=pointer]
+            - generic [ref=e143] [cursor=pointer]: "?"
+          - generic [ref=e145] [cursor=pointer]:
+            - generic [ref=e146]: Customer Ratings
+            - img [ref=e147]
+          - generic [ref=e150] [cursor=pointer]:
+            - generic [ref=e151]: GST Invoice Available
+            - img [ref=e152]
+          - generic [ref=e154]:
+            - generic [ref=e155] [cursor=pointer]:
+              - generic [ref=e156]: Ram
+              - img [ref=e157]
+            - generic "1 GB and Below" [ref=e161] [cursor=pointer]:
+              - generic [ref=e165]: 1 GB and Below
+          - generic [ref=e167] [cursor=pointer]:
+            - generic [ref=e168]: Internal Storage
+            - img [ref=e169]
+          - generic [ref=e172] [cursor=pointer]:
+            - generic [ref=e173]: Battery Capacity
+            - img [ref=e174]
+          - generic [ref=e177] [cursor=pointer]:
+            - generic [ref=e178]: Screen Size
+            - img [ref=e179]
+          - generic [ref=e182] [cursor=pointer]:
+            - generic [ref=e183]: Primary Camera
+            - img [ref=e184]
+          - generic [ref=e187] [cursor=pointer]:
+            - generic [ref=e188]: Secondary Camera
+            - img [ref=e189]
+          - generic [ref=e192] [cursor=pointer]:
+            - generic [ref=e193]: Processor Brand
+            - img [ref=e194]
+          - generic [ref=e197] [cursor=pointer]:
+            - generic [ref=e198]: Speciality
+            - img [ref=e199]
+          - generic [ref=e202] [cursor=pointer]:
+            - generic [ref=e203]: Resolution Type
+            - img [ref=e204]
+          - generic [ref=e207] [cursor=pointer]:
+            - generic [ref=e208]: Operating System
+            - img [ref=e209]
+          - generic [ref=e212] [cursor=pointer]:
+            - generic [ref=e213]: Network Type
+            - img [ref=e214]
+          - generic [ref=e217] [cursor=pointer]:
+            - generic [ref=e218]: Sim Type
+            - img [ref=e219]
+          - generic [ref=e222] [cursor=pointer]:
+            - generic [ref=e223]: Availability
+            - img [ref=e224]
+          - generic [ref=e226]:
+            - generic [ref=e227] [cursor=pointer]:
+              - generic [ref=e228]: Discount
+              - img [ref=e229]
+            - generic [ref=e232]:
+              - generic "10% or more" [ref=e233] [cursor=pointer]:
+                - generic [ref=e237]: 10% or more
+              - generic "50% or more" [ref=e238] [cursor=pointer]:
+                - generic [ref=e242]: 50% or more
+              - generic "40% or more" [ref=e243] [cursor=pointer]:
+                - generic [ref=e247]: 40% or more
+              - generic "30% or more" [ref=e248] [cursor=pointer]:
+                - generic [ref=e252]: 30% or more
+              - generic "20% or more" [ref=e253] [cursor=pointer]:
+                - generic [ref=e257]: 20% or more
+          - generic [ref=e258]:
+            - generic [ref=e259] [cursor=pointer]:
+              - generic [ref=e260]: Offers
+              - img [ref=e261]
+            - generic "Special Price" [ref=e265] [cursor=pointer]:
+              - generic [ref=e269]: Special Price
+          - generic [ref=e271] [cursor=pointer]:
+            - generic [ref=e272]: Type
+            - img [ref=e273]
+          - generic [ref=e276] [cursor=pointer]:
+            - generic [ref=e277]: Clock Speed
+            - img [ref=e278]
+          - generic [ref=e281] [cursor=pointer]:
+            - generic [ref=e282]: Features
+            - img [ref=e283]
+          - generic [ref=e286] [cursor=pointer]:
+            - generic [ref=e287]: Number of Cores
+            - img [ref=e288]
+        - link "Need help? Help me decide Buying Guide" [ref=e291] [cursor=pointer]:
+          - /url: /buying-guide/mobiles?sid=tyy,4io&otracker=bg_from_browse_lhs
+          - generic [ref=e292]: Need help?
+          - generic [ref=e293]:
+            - text: Help me decide
+            - img [ref=e294]
+          - img "Buying Guide" [ref=e296]
+      - generic [ref=e297]:
+        - generic [ref=e300]:
+          - generic [ref=e301]:
+            - generic [ref=e302]:
+              - link "Home" [ref=e303] [cursor=pointer]:
+                - /url: /
+              - img [ref=e304]
+            - generic [ref=e306]:
+              - link "Mobiles & Accessories" [ref=e307] [cursor=pointer]:
+                - /url: /mobiles-accessories/pr?sid=tyy&marketplace=FLIPKART
+              - img [ref=e308]
+            - link "Mobiles" [ref=e311] [cursor=pointer]:
+              - /url: /mobiles/pr?sid=tyy,4io&marketplace=FLIPKART
+          - generic [ref=e312]: Showing 1 – 24 of 53 results for "apple iphone 16 ultramarine 128 gb"
+          - generic [ref=e313]:
+            - generic [ref=e314]: Sort By
+            - generic [ref=e315]: Relevance
+            - generic [ref=e316] [cursor=pointer]: Popularity
+            - generic [ref=e317] [cursor=pointer]: Price -- Low to High
+            - generic [ref=e318] [cursor=pointer]: Price -- High to Low
+            - generic [ref=e319] [cursor=pointer]: Newest First
+        - link "Apple iPhone 16 (Ultramarine, 128 GB) Add to Compare Apple iPhone 16 (Ultramarine, 128 GB) 4.6 1,94,072 Ratings & 6,858 Reviews • 128 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 48MP + 12MP | 12MP Front Camera • A18 Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹62,900 ₹69,900 10% off Super Deals Only few left" [active] [ref=e324] [cursor=pointer]:
+          - /url: /apple-iphone-16-ultramarine-128-gb/p/itmcc210cae43fba?pid=MOBH4DQFYZT6EH2F&lid=LSTMOBH4DQFYZT6EH2FXM70WU&marketplace=FLIPKART&q=apple+iphone+16+ultramarine+128+gb&store=tyy%2F4io&srno=s_1_1&otracker=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&fm=organic&iid=26d32c2d-560a-43ae-8516-013f777b758d.MOBH4DQFYZT6EH2F.SEARCH&ppt=None&ppn=None&ssid=grt2hzfrgg0000001781452091891&qH=a185e31ecd725b0e&ov_redirect=true
+          - generic [ref=e325]:
+            - img "Apple iPhone 16 (Ultramarine, 128 GB)" [ref=e329]
+            - generic [ref=e335]: Add to Compare
+            - img [ref=e338]
+          - generic [ref=e340]:
+            - generic [ref=e341]:
+              - generic [ref=e342]: Apple iPhone 16 (Ultramarine, 128 GB)
+              - generic [ref=e343]:
+                - generic [ref=e345]:
+                  - text: "4.6"
+                  - img [ref=e346]
+                - generic [ref=e348]: 1,94,072 Ratings & 6,858 Reviews
+              - list [ref=e350]:
+                - listitem [ref=e351]: • 128 GB ROM
+                - listitem [ref=e352]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+                - listitem [ref=e353]: • 48MP + 12MP | 12MP Front Camera
+                - listitem [ref=e354]: • A18 Chip, 6 Core Processor Processor
+                - listitem [ref=e355]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=e356]:
+              - generic [ref=e358]:
+                - generic [ref=e359]: ₹62,900
+                - generic [ref=e360]: ₹69,900
+                - generic [ref=e361]: 10% off
+              - img [ref=e363]
+              - generic [ref=e366]: Super Deals
+              - generic [ref=e369]: Only few left
+        - link "Apple iPhone 16 (Black, 128 GB) Add to Compare Apple iPhone 16 (Black, 128 GB) 4.6 1,94,072 Ratings & 6,858 Reviews • 128 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 48MP + 12MP | 12MP Front Camera • A18 Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹62,900 ₹69,900 10% off Super Deals Upto ₹43,650 Off on Exchange" [ref=e374] [cursor=pointer]:
+          - /url: /apple-iphone-16-black-128-gb/p/itmb07d67f995271?pid=MOBH4DQFG8NKFRDY&lid=LSTMOBH4DQFG8NKFRDYNBDOZI&marketplace=FLIPKART&q=apple+iphone+16+ultramarine+128+gb&store=tyy%2F4io&srno=s_1_2&otracker=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&fm=organic&iid=26d32c2d-560a-43ae-8516-013f777b758d.MOBH4DQFG8NKFRDY.SEARCH&ppt=None&ppn=None&ssid=grt2hzfrgg0000001781452091891&qH=a185e31ecd725b0e&ov_redirect=true
+          - generic [ref=e375]:
+            - img "Apple iPhone 16 (Black, 128 GB)" [ref=e379]
+            - generic [ref=e385]: Add to Compare
+            - img [ref=e388]
+          - generic [ref=e390]:
+            - generic [ref=e391]:
+              - generic [ref=e392]: Apple iPhone 16 (Black, 128 GB)
+              - generic [ref=e393]:
+                - generic [ref=e395]:
+                  - text: "4.6"
+                  - img [ref=e396]
+                - generic [ref=e398]: 1,94,072 Ratings & 6,858 Reviews
+              - list [ref=e400]:
+                - listitem [ref=e401]: • 128 GB ROM
+                - listitem [ref=e402]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+                - listitem [ref=e403]: • 48MP + 12MP | 12MP Front Camera
+                - listitem [ref=e404]: • A18 Chip, 6 Core Processor Processor
+                - listitem [ref=e405]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=e406]:
+              - generic [ref=e408]:
+                - generic [ref=e409]: ₹62,900
+                - generic [ref=e410]: ₹69,900
+                - generic [ref=e411]: 10% off
+              - img [ref=e413]
+              - generic [ref=e416]: Super Deals
+              - generic [ref=e418]:
+                - generic [ref=e419]: Upto
+                - generic [ref=e420]: ₹43,650
+                - generic [ref=e421]: Off on Exchange
+        - link "Bestseller Apple iPhone 15 (Black, 128 GB) Add to Compare Apple iPhone 15 (Black, 128 GB) 4.6 2,45,980 Ratings & 9,280 Reviews • 128 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 48MP + 12MP | 12MP Front Camera • A16 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹54,900 ₹59,900 8% off Upto ₹38,300 Off on Exchange Bank Offer" [ref=e426] [cursor=pointer]:
+          - /url: /apple-iphone-15-black-128-gb/p/itm6ac6485515ae4?pid=MOBGTAGPTB3VS24W&lid=LSTMOBGTAGPTB3VS24WKFODHL&marketplace=FLIPKART&q=apple+iphone+16+ultramarine+128+gb&store=tyy%2F4io&spotlightTagId=default_BestsellerId_tyy%2F4io&srno=s_1_3&otracker=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&fm=search-autosuggest&iid=26d32c2d-560a-43ae-8516-013f777b758d.MOBGTAGPTB3VS24W.SEARCH&ppt=sp&ppn=sp&ssid=grt2hzfrgg0000001781452091891&qH=a185e31ecd725b0e&ov_redirect=true
+          - generic [ref=e427]: Bestseller
+          - generic [ref=e428]:
+            - img "Apple iPhone 15 (Black, 128 GB)" [ref=e432]
+            - generic [ref=e438]: Add to Compare
+            - img [ref=e441]
+          - generic [ref=e443]:
+            - generic [ref=e444]:
+              - generic [ref=e445]: Apple iPhone 15 (Black, 128 GB)
+              - generic [ref=e446]:
+                - generic [ref=e448]:
+                  - text: "4.6"
+                  - img [ref=e449]
+                - generic [ref=e451]: 2,45,980 Ratings & 9,280 Reviews
+              - list [ref=e453]:
+                - listitem [ref=e454]: • 128 GB ROM
+                - listitem [ref=e455]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+                - listitem [ref=e456]: • 48MP + 12MP | 12MP Front Camera
+                - listitem [ref=e457]: • A16 Bionic Chip, 6 Core Processor Processor
+                - listitem [ref=e458]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=e459]:
+              - generic [ref=e461]:
+                - generic [ref=e462]: ₹54,900
+                - generic [ref=e463]: ₹59,900
+                - generic [ref=e464]: 8% off
+              - img [ref=e466]
+              - generic [ref=e468]:
+                - generic [ref=e469]: Upto
+                - generic [ref=e470]: ₹38,300
+                - generic [ref=e471]: Off on Exchange
+              - generic [ref=e474]: Bank Offer
+        - link "Apple iPhone 16 (Teal, 128 GB) Add to Compare Apple iPhone 16 (Teal, 128 GB) 4.6 1,94,072 Ratings & 6,858 Reviews • 128 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 48MP + 12MP | 12MP Front Camera • A18 Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹62,900 ₹69,900 10% off Super Deals Only 2 left" [ref=e479] [cursor=pointer]:
+          - /url: /apple-iphone-16-teal-128-gb/p/itmce4bb3f55cc2f?pid=MOBH4DQFSY9ETDUU&lid=LSTMOBH4DQFSY9ETDUUI6AN3O&marketplace=FLIPKART&q=apple+iphone+16+ultramarine+128+gb&store=tyy%2F4io&srno=s_1_4&otracker=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&fm=organic&iid=26d32c2d-560a-43ae-8516-013f777b758d.MOBH4DQFSY9ETDUU.SEARCH&ppt=None&ppn=None&ssid=grt2hzfrgg0000001781452091891&qH=a185e31ecd725b0e&ov_redirect=true
+          - generic [ref=e480]:
+            - img "Apple iPhone 16 (Teal, 128 GB)" [ref=e484]
+            - generic [ref=e490]: Add to Compare
+            - img [ref=e493]
+          - generic [ref=e495]:
+            - generic [ref=e496]:
+              - generic [ref=e497]: Apple iPhone 16 (Teal, 128 GB)
+              - generic [ref=e498]:
+                - generic [ref=e500]:
+                  - text: "4.6"
+                  - img [ref=e501]
+                - generic [ref=e503]: 1,94,072 Ratings & 6,858 Reviews
+              - list [ref=e505]:
+                - listitem [ref=e506]: • 128 GB ROM
+                - listitem [ref=e507]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+                - listitem [ref=e508]: • 48MP + 12MP | 12MP Front Camera
+                - listitem [ref=e509]: • A18 Chip, 6 Core Processor Processor
+                - listitem [ref=e510]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=e511]:
+              - generic [ref=e513]:
+                - generic [ref=e514]: ₹62,900
+                - generic [ref=e515]: ₹69,900
+                - generic [ref=e516]: 10% off
+              - img [ref=e518]
+              - generic [ref=e521]: Super Deals
+              - generic [ref=e524]: Only 2 left
+        - link "Apple iPhone 16 (Pink, 128 GB) Add to Compare Apple iPhone 16 (Pink, 128 GB) 4.6 1,94,072 Ratings & 6,858 Reviews • 128 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 48MP + 12MP | 12MP Front Camera • A18 Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹62,900 ₹69,900 10% off Super Deals Upto ₹43,650 Off on Exchange" [ref=e529] [cursor=pointer]:
+          - /url: /apple-iphone-16-pink-128-gb/p/itmc2e910b4d0b1c?pid=MOBH4DQFWJVDRSHM&lid=LSTMOBH4DQFWJVDRSHMAMTBLL&marketplace=FLIPKART&q=apple+iphone+16+ultramarine+128+gb&store=tyy%2F4io&srno=s_1_5&otracker=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&fm=organic&iid=26d32c2d-560a-43ae-8516-013f777b758d.MOBH4DQFWJVDRSHM.SEARCH&ppt=None&ppn=None&ssid=grt2hzfrgg0000001781452091891&qH=a185e31ecd725b0e&ov_redirect=true
+          - generic [ref=e530]:
+            - img "Apple iPhone 16 (Pink, 128 GB)" [ref=e534]
+            - generic [ref=e540]: Add to Compare
+            - img [ref=e543]
+          - generic [ref=e545]:
+            - generic [ref=e546]:
+              - generic [ref=e547]: Apple iPhone 16 (Pink, 128 GB)
+              - generic [ref=e548]:
+                - generic [ref=e550]:
+                  - text: "4.6"
+                  - img [ref=e551]
+                - generic [ref=e553]: 1,94,072 Ratings & 6,858 Reviews
+              - list [ref=e555]:
+                - listitem [ref=e556]: • 128 GB ROM
+                - listitem [ref=e557]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+                - listitem [ref=e558]: • 48MP + 12MP | 12MP Front Camera
+                - listitem [ref=e559]: • A18 Chip, 6 Core Processor Processor
+                - listitem [ref=e560]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=e561]:
+              - generic [ref=e563]:
+                - generic [ref=e564]: ₹62,900
+                - generic [ref=e565]: ₹69,900
+                - generic [ref=e566]: 10% off
+              - img [ref=e568]
+              - generic [ref=e571]: Super Deals
+              - generic [ref=e573]:
+                - generic [ref=e574]: Upto
+                - generic [ref=e575]: ₹43,650
+                - generic [ref=e576]: Off on Exchange
+        - link "Apple iPhone 15 (Blue, 128 GB) Currently unavailable Add to Compare Apple iPhone 15 (Blue, 128 GB) 4.6 2,45,980 Ratings & 9,280 Reviews • 128 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 48MP + 12MP | 12MP Front Camera • A16 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹54,900 ₹59,900 8% off Upto ₹38,300 Off on Exchange Bank Offer" [ref=e581] [cursor=pointer]:
+          - /url: /apple-iphone-15-blue-128-gb/p/itmbf14ef54f645d?pid=MOBGTAGPAQNVFZZY&lid=LSTMOBGTAGPAQNVFZZYCQQXYH&marketplace=FLIPKART&q=apple+iphone+16+ultramarine+128+gb&store=tyy%2F4io&srno=s_1_6&otracker=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&fm=organic&iid=26d32c2d-560a-43ae-8516-013f777b758d.MOBGTAGPAQNVFZZY.SEARCH&ppt=None&ppn=None&ssid=grt2hzfrgg0000001781452091891&qH=a185e31ecd725b0e&ov_redirect=true
+          - generic [ref=e582]:
+            - generic [ref=e583]:
+              - img "Apple iPhone 15 (Blue, 128 GB)" [ref=e586]
+              - generic: Currently unavailable
+            - generic [ref=e592]: Add to Compare
+            - img [ref=e595]
+          - generic [ref=e597]:
+            - generic [ref=e598]:
+              - generic [ref=e599]: Apple iPhone 15 (Blue, 128 GB)
+              - generic [ref=e600]:
+                - generic [ref=e602]:
+                  - text: "4.6"
+                  - img [ref=e603]
+                - generic [ref=e605]: 2,45,980 Ratings & 9,280 Reviews
+              - list [ref=e607]:
+                - listitem [ref=e608]: • 128 GB ROM
+                - listitem [ref=e609]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+                - listitem [ref=e610]: • 48MP + 12MP | 12MP Front Camera
+                - listitem [ref=e611]: • A16 Bionic Chip, 6 Core Processor Processor
+                - listitem [ref=e612]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=e613]:
+              - generic [ref=e615]:
+                - generic [ref=e616]: ₹54,900
+                - generic [ref=e617]: ₹59,900
+                - generic [ref=e618]: 8% off
+              - img [ref=e620]
+              - generic [ref=e622]:
+                - generic [ref=e623]: Upto
+                - generic [ref=e624]: ₹38,300
+                - generic [ref=e625]: Off on Exchange
+              - generic [ref=e628]: Bank Offer
+        - link "Apple iPhone 16 Plus (Ultramarine, 256 GB) Add to Compare Apple iPhone 16 Plus (Ultramarine, 256 GB) 4.6 4,098 Ratings & 253 Reviews • 256 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 48MP + 12MP | 12MP Front Camera • A18 Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹89,900 Only few left Upto ₹47,350 Off on Exchange" [ref=e633] [cursor=pointer]:
+          - /url: /apple-iphone-16-plus-ultramarine-256-gb/p/itm1a7499437978a?pid=MOBH4DQFZXQGRWHH&lid=LSTMOBH4DQFZXQGRWHH4DYTPT&marketplace=FLIPKART&q=apple+iphone+16+ultramarine+128+gb&store=tyy%2F4io&srno=s_1_7&otracker=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&fm=organic&iid=26d32c2d-560a-43ae-8516-013f777b758d.MOBH4DQFZXQGRWHH.SEARCH&ppt=None&ppn=None&ssid=grt2hzfrgg0000001781452091891&qH=a185e31ecd725b0e&ov_redirect=true
+          - generic [ref=e634]:
+            - img "Apple iPhone 16 Plus (Ultramarine, 256 GB)" [ref=e638]
+            - generic [ref=e644]: Add to Compare
+            - img [ref=e647]
+          - generic [ref=e649]:
+            - generic [ref=e650]:
+              - generic [ref=e651]: Apple iPhone 16 Plus (Ultramarine, 256 GB)
+              - generic [ref=e652]:
+                - generic [ref=e654]:
+                  - text: "4.6"
+                  - img [ref=e655]
+                - generic [ref=e657]: 4,098 Ratings & 253 Reviews
+              - list [ref=e659]:
+                - listitem [ref=e660]: • 256 GB ROM
+                - listitem [ref=e661]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+                - listitem [ref=e662]: • 48MP + 12MP | 12MP Front Camera
+                - listitem [ref=e663]: • A18 Chip, 6 Core Processor Processor
+                - listitem [ref=e664]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=e665]:
+              - generic [ref=e668]: ₹89,900
+              - img [ref=e670]
+              - generic [ref=e673]: Only few left
+              - generic [ref=e675]:
+                - generic [ref=e676]: Upto
+                - generic [ref=e677]: ₹47,350
+                - generic [ref=e678]: Off on Exchange
+        - link "Apple iPhone 16 (Ultramarine, 256 GB) Add to Compare Apple iPhone 16 (Ultramarine, 256 GB) 4.6 1,94,072 Ratings & 6,858 Reviews • 256 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 48MP + 12MP | 12MP Front Camera • A18 Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹72,900 ₹79,900 8% off Upto ₹47,350 Off on Exchange Bank Offer" [ref=e683] [cursor=pointer]:
+          - /url: /apple-iphone-16-ultramarine-256-gb/p/itm03cecd3e85111?pid=MOBH4DQFMGE7UC8Q&lid=LSTMOBH4DQFMGE7UC8QXZXA8M&marketplace=FLIPKART&q=apple+iphone+16+ultramarine+128+gb&store=tyy%2F4io&srno=s_1_8&otracker=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&fm=organic&iid=26d32c2d-560a-43ae-8516-013f777b758d.MOBH4DQFMGE7UC8Q.SEARCH&ppt=None&ppn=None&ssid=grt2hzfrgg0000001781452091891&qH=a185e31ecd725b0e&ov_redirect=true
+          - generic [ref=e684]:
+            - img "Apple iPhone 16 (Ultramarine, 256 GB)" [ref=e688]
+            - generic [ref=e694]: Add to Compare
+            - img [ref=e697]
+          - generic [ref=e699]:
+            - generic [ref=e700]:
+              - generic [ref=e701]: Apple iPhone 16 (Ultramarine, 256 GB)
+              - generic [ref=e702]:
+                - generic [ref=e704]:
+                  - text: "4.6"
+                  - img [ref=e705]
+                - generic [ref=e707]: 1,94,072 Ratings & 6,858 Reviews
+              - list [ref=e709]:
+                - listitem [ref=e710]: • 256 GB ROM
+                - listitem [ref=e711]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+                - listitem [ref=e712]: • 48MP + 12MP | 12MP Front Camera
+                - listitem [ref=e713]: • A18 Chip, 6 Core Processor Processor
+                - listitem [ref=e714]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=e715]:
+              - generic [ref=e717]:
+                - generic [ref=e718]: ₹72,900
+                - generic [ref=e719]: ₹79,900
+                - generic [ref=e720]: 8% off
+              - img [ref=e722]
+              - generic [ref=e724]:
+                - generic [ref=e725]: Upto
+                - generic [ref=e726]: ₹47,350
+                - generic [ref=e727]: Off on Exchange
+              - generic [ref=e730]: Bank Offer
+        - link "Apple iPhone 16 (Pink, 256 GB) Add to Compare Apple iPhone 16 (Pink, 256 GB) 4.6 1,94,072 Ratings & 6,858 Reviews • 256 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 48MP + 12MP | 12MP Front Camera • A18 Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹72,900 ₹79,900 8% off Upto ₹47,350 Off on Exchange Bank Offer" [ref=e735] [cursor=pointer]:
+          - /url: /apple-iphone-16-pink-256-gb/p/itm0d8c695cded44?pid=MOBH4DQF28XAYM2S&lid=LSTMOBH4DQF28XAYM2S3JPA23&marketplace=FLIPKART&q=apple+iphone+16+ultramarine+128+gb&store=tyy%2F4io&srno=s_1_9&otracker=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&fm=organic&iid=26d32c2d-560a-43ae-8516-013f777b758d.MOBH4DQF28XAYM2S.SEARCH&ppt=None&ppn=None&ssid=grt2hzfrgg0000001781452091891&qH=a185e31ecd725b0e&ov_redirect=true
+          - generic [ref=e736]:
+            - img "Apple iPhone 16 (Pink, 256 GB)" [ref=e740]
+            - generic [ref=e746]: Add to Compare
+            - img [ref=e749]
+          - generic [ref=e751]:
+            - generic [ref=e752]:
+              - generic [ref=e753]: Apple iPhone 16 (Pink, 256 GB)
+              - generic [ref=e754]:
+                - generic [ref=e756]:
+                  - text: "4.6"
+                  - img [ref=e757]
+                - generic [ref=e759]: 1,94,072 Ratings & 6,858 Reviews
+              - list [ref=e761]:
+                - listitem [ref=e762]: • 256 GB ROM
+                - listitem [ref=e763]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+                - listitem [ref=e764]: • 48MP + 12MP | 12MP Front Camera
+                - listitem [ref=e765]: • A18 Chip, 6 Core Processor Processor
+                - listitem [ref=e766]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=e767]:
+              - generic [ref=e769]:
+                - generic [ref=e770]: ₹72,900
+                - generic [ref=e771]: ₹79,900
+                - generic [ref=e772]: 8% off
+              - img [ref=e774]
+              - generic [ref=e776]:
+                - generic [ref=e777]: Upto
+                - generic [ref=e778]: ₹47,350
+                - generic [ref=e779]: Off on Exchange
+              - generic [ref=e782]: Bank Offer
+        - link "Apple iPhone 16 Pro (Natural Titanium, 512 GB) Currently unavailable Add to Compare Apple iPhone 16 Pro (Natural Titanium, 512 GB) 4.7 28,727 Ratings & 1,279 Reviews • 512 GB ROM • 16.0 cm (6.3 inch) Super Retina XDR Display • 48MP + 48MP + 12MP | 12MP Front Camera • A18 Pro Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹1,39,900 Upto ₹47,350 Off on Exchange Bank Offer" [ref=e787] [cursor=pointer]:
+          - /url: /apple-iphone-16-pro-natural-titanium-512-gb/p/itm2aade5f05f9fc?pid=MOBH4DQFHQCCV5HU&lid=LSTMOBH4DQFHQCCV5HUR3IAMX&marketplace=FLIPKART&q=apple+iphone+16+ultramarine+128+gb&store=tyy%2F4io&srno=s_1_10&otracker=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&fm=organic&iid=26d32c2d-560a-43ae-8516-013f777b758d.MOBH4DQFHQCCV5HU.SEARCH&ppt=None&ppn=None&ssid=grt2hzfrgg0000001781452091891&qH=a185e31ecd725b0e&ov_redirect=true
+          - generic [ref=e788]:
+            - generic [ref=e789]:
+              - img "Apple iPhone 16 Pro (Natural Titanium, 512 GB)" [ref=e792]
+              - generic: Currently unavailable
+            - generic [ref=e798]: Add to Compare
+            - img [ref=e801]
+          - generic [ref=e803]:
+            - generic [ref=e804]:
+              - generic [ref=e805]: Apple iPhone 16 Pro (Natural Titanium, 512 GB)
+              - generic [ref=e806]:
+                - generic [ref=e808]:
+                  - text: "4.7"
+                  - img [ref=e809]
+                - generic [ref=e811]: 28,727 Ratings & 1,279 Reviews
+              - list [ref=e813]:
+                - listitem [ref=e814]: • 512 GB ROM
+                - listitem [ref=e815]: • 16.0 cm (6.3 inch) Super Retina XDR Display
+                - listitem [ref=e816]: • 48MP + 48MP + 12MP | 12MP Front Camera
+                - listitem [ref=e817]: • A18 Pro Chip, 6 Core Processor Processor
+                - listitem [ref=e818]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=e819]:
+              - generic [ref=e822]: ₹1,39,900
+              - img [ref=e824]
+              - generic [ref=e826]:
+                - generic [ref=e827]: Upto
+                - generic [ref=e828]: ₹47,350
+                - generic [ref=e829]: Off on Exchange
+              - generic [ref=e832]: Bank Offer
+        - link "Apple iPhone 16 Pro (Natural Titanium, 256 GB) Currently unavailable Add to Compare Apple iPhone 16 Pro (Natural Titanium, 256 GB) 4.7 28,727 Ratings & 1,279 Reviews • 256 GB ROM • 16.0 cm (6.3 inch) Super Retina XDR Display • 48MP + 48MP + 12MP | 12MP Front Camera • A18 Pro Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹1,19,900 Upto ₹47,350 Off on Exchange Bank Offer" [ref=e837] [cursor=pointer]:
+          - /url: /apple-iphone-16-pro-natural-titanium-256-gb/p/itm8d07958e8b89e?pid=MOBH4DQFQRF9VSQG&lid=LSTMOBH4DQFQRF9VSQGVR7HJE&marketplace=FLIPKART&q=apple+iphone+16+ultramarine+128+gb&store=tyy%2F4io&spotlightTagId=default_TrendingId_tyy%2F4io&srno=s_1_11&otracker=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&fm=organic&iid=26d32c2d-560a-43ae-8516-013f777b758d.MOBH4DQFQRF9VSQG.SEARCH&ppt=None&ppn=None&ssid=grt2hzfrgg0000001781452091891&qH=a185e31ecd725b0e&ov_redirect=true
+          - generic [ref=e838]:
+            - generic [ref=e839]:
+              - img "Apple iPhone 16 Pro (Natural Titanium, 256 GB)" [ref=e842]
+              - generic: Currently unavailable
+            - generic [ref=e848]: Add to Compare
+            - img [ref=e851]
+          - generic [ref=e853]:
+            - generic [ref=e854]:
+              - generic [ref=e855]: Apple iPhone 16 Pro (Natural Titanium, 256 GB)
+              - generic [ref=e856]:
+                - generic [ref=e858]:
+                  - text: "4.7"
+                  - img [ref=e859]
+                - generic [ref=e861]: 28,727 Ratings & 1,279 Reviews
+              - list [ref=e863]:
+                - listitem [ref=e864]: • 256 GB ROM
+                - listitem [ref=e865]: • 16.0 cm (6.3 inch) Super Retina XDR Display
+                - listitem [ref=e866]: • 48MP + 48MP + 12MP | 12MP Front Camera
+                - listitem [ref=e867]: • A18 Pro Chip, 6 Core Processor Processor
+                - listitem [ref=e868]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=e869]:
+              - generic [ref=e872]: ₹1,19,900
+              - img [ref=e874]
+              - generic [ref=e876]:
+                - generic [ref=e877]: Upto
+                - generic [ref=e878]: ₹47,350
+                - generic [ref=e879]: Off on Exchange
+              - generic [ref=e882]: Bank Offer
+        - link "Apple iPhone 16 Plus (Ultramarine, 128 GB) Add to Compare Apple iPhone 16 Plus (Ultramarine, 128 GB) 4.6 4,098 Ratings & 253 Reviews • 128 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 48MP + 12MP | 12MP Front Camera • A18 Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹79,900 Only few left Upto ₹47,350 Off on Exchange" [ref=e887] [cursor=pointer]:
+          - /url: /apple-iphone-16-plus-ultramarine-128-gb/p/itm3a32a91957d41?pid=MOBH4DQFKZDYZNWX&lid=LSTMOBH4DQFKZDYZNWXU5NVDP&marketplace=FLIPKART&q=apple+iphone+16+ultramarine+128+gb&store=tyy%2F4io&srno=s_1_12&otracker=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&fm=organic&iid=26d32c2d-560a-43ae-8516-013f777b758d.MOBH4DQFKZDYZNWX.SEARCH&ppt=None&ppn=None&ssid=grt2hzfrgg0000001781452091891&qH=a185e31ecd725b0e&ov_redirect=true
+          - generic [ref=e888]:
+            - img "Apple iPhone 16 Plus (Ultramarine, 128 GB)" [ref=e892]
+            - generic [ref=e898]: Add to Compare
+            - img [ref=e901]
+          - generic [ref=e903]:
+            - generic [ref=e904]:
+              - generic [ref=e905]: Apple iPhone 16 Plus (Ultramarine, 128 GB)
+              - generic [ref=e906]:
+                - generic [ref=e908]:
+                  - text: "4.6"
+                  - img [ref=e909]
+                - generic [ref=e911]: 4,098 Ratings & 253 Reviews
+              - list [ref=e913]:
+                - listitem [ref=e914]: • 128 GB ROM
+                - listitem [ref=e915]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+                - listitem [ref=e916]: • 48MP + 12MP | 12MP Front Camera
+                - listitem [ref=e917]: • A18 Chip, 6 Core Processor Processor
+                - listitem [ref=e918]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=e919]:
+              - generic [ref=e922]: ₹79,900
+              - img [ref=e924]
+              - generic [ref=e927]: Only few left
+              - generic [ref=e929]:
+                - generic [ref=e930]: Upto
+                - generic [ref=e931]: ₹47,350
+                - generic [ref=e932]: Off on Exchange
+        - link "Apple iPhone 14 (Blue, 128 GB) Currently unavailable Add to Compare Apple iPhone 14 (Blue, 128 GB) 4.6 2,84,387 Ratings & 11,308 Reviews • 128 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 12MP + 12MP | 12MP Front Camera • A15 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹54,900 Upto ₹38,300 Off on Exchange Bank Offer" [ref=e937] [cursor=pointer]:
+          - /url: /apple-iphone-14-blue-128-gb/p/itmdb77f40da6b6d?pid=MOBGHWFHSV7GUFWA&lid=LSTMOBGHWFHSV7GUFWAFEQJQ4&marketplace=FLIPKART&q=apple+iphone+16+ultramarine+128+gb&store=tyy%2F4io&srno=s_1_13&otracker=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&fm=organic&iid=26d32c2d-560a-43ae-8516-013f777b758d.MOBGHWFHSV7GUFWA.SEARCH&ppt=None&ppn=None&ssid=grt2hzfrgg0000001781452091891&qH=a185e31ecd725b0e&ov_redirect=true
+          - generic [ref=e938]:
+            - generic [ref=e939]:
+              - img "Apple iPhone 14 (Blue, 128 GB)" [ref=e942]
+              - generic: Currently unavailable
+            - generic [ref=e948]: Add to Compare
+            - img [ref=e951]
+          - generic [ref=e953]:
+            - generic [ref=e954]:
+              - generic [ref=e955]: Apple iPhone 14 (Blue, 128 GB)
+              - generic [ref=e956]:
+                - generic [ref=e958]:
+                  - text: "4.6"
+                  - img [ref=e959]
+                - generic [ref=e961]: 2,84,387 Ratings & 11,308 Reviews
+              - list [ref=e963]:
+                - listitem [ref=e964]: • 128 GB ROM
+                - listitem [ref=e965]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+                - listitem [ref=e966]: • 12MP + 12MP | 12MP Front Camera
+                - listitem [ref=e967]: • A15 Bionic Chip, 6 Core Processor Processor
+                - listitem [ref=e968]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=e969]:
+              - generic [ref=e972]: ₹54,900
+              - img [ref=e974]
+              - generic [ref=e976]:
+                - generic [ref=e977]: Upto
+                - generic [ref=e978]: ₹38,300
+                - generic [ref=e979]: Off on Exchange
+              - generic [ref=e982]: Bank Offer
+        - link "Apple iPhone 16 Pro (Desert Titanium, 256 GB) Currently unavailable Add to Compare Apple iPhone 16 Pro (Desert Titanium, 256 GB) 4.7 28,727 Ratings & 1,279 Reviews • 256 GB ROM • 16.0 cm (6.3 inch) Super Retina XDR Display • 48MP + 48MP + 12MP | 12MP Front Camera • A18 Pro Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹1,19,900 Upto ₹47,350 Off on Exchange Bank Offer" [ref=e987] [cursor=pointer]:
+          - /url: /apple-iphone-16-pro-desert-titanium-256-gb/p/itm4f25cec0bd003?pid=MOBH4DQFEZFXPGNJ&lid=LSTMOBH4DQFEZFXPGNJWZMLCY&marketplace=FLIPKART&q=apple+iphone+16+ultramarine+128+gb&store=tyy%2F4io&srno=s_1_14&otracker=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&fm=organic&iid=26d32c2d-560a-43ae-8516-013f777b758d.MOBH4DQFEZFXPGNJ.SEARCH&ppt=None&ppn=None&ssid=grt2hzfrgg0000001781452091891&qH=a185e31ecd725b0e&ov_redirect=true
+          - generic [ref=e988]:
+            - generic [ref=e989]:
+              - img "Apple iPhone 16 Pro (Desert Titanium, 256 GB)" [ref=e992]
+              - generic: Currently unavailable
+            - generic [ref=e998]: Add to Compare
+            - img [ref=e1001]
+          - generic [ref=e1003]:
+            - generic [ref=e1004]:
+              - generic [ref=e1005]: Apple iPhone 16 Pro (Desert Titanium, 256 GB)
+              - generic [ref=e1006]:
+                - generic [ref=e1008]:
+                  - text: "4.7"
+                  - img [ref=e1009]
+                - generic [ref=e1011]: 28,727 Ratings & 1,279 Reviews
+              - list [ref=e1013]:
+                - listitem [ref=e1014]: • 256 GB ROM
+                - listitem [ref=e1015]: • 16.0 cm (6.3 inch) Super Retina XDR Display
+                - listitem [ref=e1016]: • 48MP + 48MP + 12MP | 12MP Front Camera
+                - listitem [ref=e1017]: • A18 Pro Chip, 6 Core Processor Processor
+                - listitem [ref=e1018]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=e1019]:
+              - generic [ref=e1022]: ₹1,19,900
+              - img [ref=e1024]
+              - generic [ref=e1026]:
+                - generic [ref=e1027]: Upto
+                - generic [ref=e1028]: ₹47,350
+                - generic [ref=e1029]: Off on Exchange
+              - generic [ref=e1032]: Bank Offer
+        - link "Apple iPhone 16 (Teal, 256 GB) Add to Compare Apple iPhone 16 (Teal, 256 GB) 4.6 1,94,072 Ratings & 6,858 Reviews • 256 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 48MP + 12MP | 12MP Front Camera • A18 Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹72,900 ₹79,900 8% off Upto ₹47,350 Off on Exchange Bank Offer" [ref=e1037] [cursor=pointer]:
+          - /url: /apple-iphone-16-teal-256-gb/p/itm2b7be11cfadef?pid=MOBH4DQFYKJHESFG&lid=LSTMOBH4DQFYKJHESFG4RZ0KX&marketplace=FLIPKART&q=apple+iphone+16+ultramarine+128+gb&store=tyy%2F4io&srno=s_1_15&otracker=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&fm=organic&iid=26d32c2d-560a-43ae-8516-013f777b758d.MOBH4DQFYKJHESFG.SEARCH&ppt=None&ppn=None&ssid=grt2hzfrgg0000001781452091891&qH=a185e31ecd725b0e&ov_redirect=true
+          - generic [ref=e1038]:
+            - img "Apple iPhone 16 (Teal, 256 GB)" [ref=e1042]
+            - generic [ref=e1048]: Add to Compare
+            - img [ref=e1051]
+          - generic [ref=e1053]:
+            - generic [ref=e1054]:
+              - generic [ref=e1055]: Apple iPhone 16 (Teal, 256 GB)
+              - generic [ref=e1056]:
+                - generic [ref=e1058]:
+                  - text: "4.6"
+                  - img [ref=e1059]
+                - generic [ref=e1061]: 1,94,072 Ratings & 6,858 Reviews
+              - list [ref=e1063]:
+                - listitem [ref=e1064]: • 256 GB ROM
+                - listitem [ref=e1065]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+                - listitem [ref=e1066]: • 48MP + 12MP | 12MP Front Camera
+                - listitem [ref=e1067]: • A18 Chip, 6 Core Processor Processor
+                - listitem [ref=e1068]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=e1069]:
+              - generic [ref=e1071]:
+                - generic [ref=e1072]: ₹72,900
+                - generic [ref=e1073]: ₹79,900
+                - generic [ref=e1074]: 8% off
+              - img [ref=e1076]
+              - generic [ref=e1078]:
+                - generic [ref=e1079]: Upto
+                - generic [ref=e1080]: ₹47,350
+                - generic [ref=e1081]: Off on Exchange
+              - generic [ref=e1084]: Bank Offer
+        - link "Apple iPhone 16 Pro (Black Titanium, 128 GB) Currently unavailable Add to Compare Apple iPhone 16 Pro (Black Titanium, 128 GB) 4.7 28,727 Ratings & 1,279 Reviews • 128 GB ROM • 16.0 cm (6.3 inch) Super Retina XDR Display • 48MP + 48MP + 12MP | 12MP Front Camera • A18 Pro Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹1,09,900 Upto ₹47,350 Off on Exchange Bank Offer" [ref=e1089] [cursor=pointer]:
+          - /url: /apple-iphone-16-pro-black-titanium-128-gb/p/itm12f97adb4c5ed?pid=MOBH4DQFVXNS5ZJH&lid=LSTMOBH4DQFVXNS5ZJHSBCLA7&marketplace=FLIPKART&q=apple+iphone+16+ultramarine+128+gb&store=tyy%2F4io&srno=s_1_16&otracker=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&fm=organic&iid=26d32c2d-560a-43ae-8516-013f777b758d.MOBH4DQFVXNS5ZJH.SEARCH&ppt=None&ppn=None&ssid=grt2hzfrgg0000001781452091891&qH=a185e31ecd725b0e&ov_redirect=true
+          - generic [ref=e1090]:
+            - generic [ref=e1091]:
+              - img "Apple iPhone 16 Pro (Black Titanium, 128 GB)" [ref=e1094]
+              - generic: Currently unavailable
+            - generic [ref=e1100]: Add to Compare
+            - img [ref=e1103]
+          - generic [ref=e1105]:
+            - generic [ref=e1106]:
+              - generic [ref=e1107]: Apple iPhone 16 Pro (Black Titanium, 128 GB)
+              - generic [ref=e1108]:
+                - generic [ref=e1110]:
+                  - text: "4.7"
+                  - img [ref=e1111]
+                - generic [ref=e1113]: 28,727 Ratings & 1,279 Reviews
+              - list [ref=e1115]:
+                - listitem [ref=e1116]: • 128 GB ROM
+                - listitem [ref=e1117]: • 16.0 cm (6.3 inch) Super Retina XDR Display
+                - listitem [ref=e1118]: • 48MP + 48MP + 12MP | 12MP Front Camera
+                - listitem [ref=e1119]: • A18 Pro Chip, 6 Core Processor Processor
+                - listitem [ref=e1120]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=e1121]:
+              - generic [ref=e1124]: ₹1,09,900
+              - img [ref=e1126]
+              - generic [ref=e1128]:
+                - generic [ref=e1129]: Upto
+                - generic [ref=e1130]: ₹47,350
+                - generic [ref=e1131]: Off on Exchange
+              - generic [ref=e1134]: Bank Offer
+        - link "Apple iPhone 16 Plus (Black, 256 GB) Add to Compare Apple iPhone 16 Plus (Black, 256 GB) 4.6 4,098 Ratings & 253 Reviews • 256 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 48MP + 12MP | 12MP Front Camera • A18 Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹89,900 Upto ₹47,350 Off on Exchange Bank Offer" [ref=e1139] [cursor=pointer]:
+          - /url: /apple-iphone-16-plus-black-256-gb/p/itma302a45837ec4?pid=MOBH4DQF7JGHH7QZ&lid=LSTMOBH4DQF7JGHH7QZXSCWPV&marketplace=FLIPKART&q=apple+iphone+16+ultramarine+128+gb&store=tyy%2F4io&srno=s_1_17&otracker=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&fm=organic&iid=26d32c2d-560a-43ae-8516-013f777b758d.MOBH4DQF7JGHH7QZ.SEARCH&ppt=None&ppn=None&ssid=grt2hzfrgg0000001781452091891&qH=a185e31ecd725b0e&ov_redirect=true
+          - generic [ref=e1140]:
+            - img "Apple iPhone 16 Plus (Black, 256 GB)" [ref=e1144]
+            - generic [ref=e1150]: Add to Compare
+            - img [ref=e1153]
+          - generic [ref=e1155]:
+            - generic [ref=e1156]:
+              - generic [ref=e1157]: Apple iPhone 16 Plus (Black, 256 GB)
+              - generic [ref=e1158]:
+                - generic [ref=e1160]:
+                  - text: "4.6"
+                  - img [ref=e1161]
+                - generic [ref=e1163]: 4,098 Ratings & 253 Reviews
+              - list [ref=e1165]:
+                - listitem [ref=e1166]: • 256 GB ROM
+                - listitem [ref=e1167]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+                - listitem [ref=e1168]: • 48MP + 12MP | 12MP Front Camera
+                - listitem [ref=e1169]: • A18 Chip, 6 Core Processor Processor
+                - listitem [ref=e1170]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=e1171]:
+              - generic [ref=e1174]: ₹89,900
+              - img [ref=e1176]
+              - generic [ref=e1178]:
+                - generic [ref=e1179]: Upto
+                - generic [ref=e1180]: ₹47,350
+                - generic [ref=e1181]: Off on Exchange
+              - generic [ref=e1184]: Bank Offer
+        - link "Apple iPhone 16 Pro (Desert Titanium, 512 GB) Currently unavailable Add to Compare Apple iPhone 16 Pro (Desert Titanium, 512 GB) 4.7 28,727 Ratings & 1,279 Reviews • 512 GB ROM • 16.0 cm (6.3 inch) Super Retina XDR Display • 48MP + 48MP + 12MP | 12MP Front Camera • A18 Pro Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹1,39,900 Upto ₹47,350 Off on Exchange Bank Offer" [ref=e1189] [cursor=pointer]:
+          - /url: /apple-iphone-16-pro-desert-titanium-512-gb/p/itm03de2a945a475?pid=MOBH4DQFVWWTC88C&lid=LSTMOBH4DQFVWWTC88CAWHKBC&marketplace=FLIPKART&q=apple+iphone+16+ultramarine+128+gb&store=tyy%2F4io&srno=s_1_18&otracker=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&fm=organic&iid=26d32c2d-560a-43ae-8516-013f777b758d.MOBH4DQFVWWTC88C.SEARCH&ppt=None&ppn=None&ssid=grt2hzfrgg0000001781452091891&qH=a185e31ecd725b0e&ov_redirect=true
+          - generic [ref=e1190]:
+            - generic [ref=e1191]:
+              - img "Apple iPhone 16 Pro (Desert Titanium, 512 GB)" [ref=e1194]
+              - generic: Currently unavailable
+            - generic [ref=e1200]: Add to Compare
+            - img [ref=e1203]
+          - generic [ref=e1205]:
+            - generic [ref=e1206]:
+              - generic [ref=e1207]: Apple iPhone 16 Pro (Desert Titanium, 512 GB)
+              - generic [ref=e1208]:
+                - generic [ref=e1210]:
+                  - text: "4.7"
+                  - img [ref=e1211]
+                - generic [ref=e1213]: 28,727 Ratings & 1,279 Reviews
+              - list [ref=e1215]:
+                - listitem [ref=e1216]: • 512 GB ROM
+                - listitem [ref=e1217]: • 16.0 cm (6.3 inch) Super Retina XDR Display
+                - listitem [ref=e1218]: • 48MP + 48MP + 12MP | 12MP Front Camera
+                - listitem [ref=e1219]: • A18 Pro Chip, 6 Core Processor Processor
+                - listitem [ref=e1220]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=e1221]:
+              - generic [ref=e1224]: ₹1,39,900
+              - img [ref=e1226]
+              - generic [ref=e1228]:
+                - generic [ref=e1229]: Upto
+                - generic [ref=e1230]: ₹47,350
+                - generic [ref=e1231]: Off on Exchange
+              - generic [ref=e1234]: Bank Offer
+        - link "Apple iPhone 14 (Midnight, 128 GB) Currently unavailable Add to Compare Apple iPhone 14 (Midnight, 128 GB) 4.6 2,84,387 Ratings & 11,308 Reviews • 128 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 12MP + 12MP | 12MP Front Camera • A15 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹54,900 Upto ₹38,300 Off on Exchange Bank Offer" [ref=e1239] [cursor=pointer]:
+          - /url: /apple-iphone-14-midnight-128-gb/p/itm9e6293c322a84?pid=MOBGHWFHECFVMDCX&lid=LSTMOBGHWFHECFVMDCXBOYSND&marketplace=FLIPKART&q=apple+iphone+16+ultramarine+128+gb&store=tyy%2F4io&srno=s_1_19&otracker=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&fm=organic&iid=26d32c2d-560a-43ae-8516-013f777b758d.MOBGHWFHECFVMDCX.SEARCH&ppt=None&ppn=None&ssid=grt2hzfrgg0000001781452091891&qH=a185e31ecd725b0e&ov_redirect=true
+          - generic [ref=e1240]:
+            - generic [ref=e1241]:
+              - img "Apple iPhone 14 (Midnight, 128 GB)" [ref=e1244]
+              - generic: Currently unavailable
+            - generic [ref=e1250]: Add to Compare
+            - img [ref=e1253]
+          - generic [ref=e1255]:
+            - generic [ref=e1256]:
+              - generic [ref=e1257]: Apple iPhone 14 (Midnight, 128 GB)
+              - generic [ref=e1258]:
+                - generic [ref=e1260]:
+                  - text: "4.6"
+                  - img [ref=e1261]
+                - generic [ref=e1263]: 2,84,387 Ratings & 11,308 Reviews
+              - list [ref=e1265]:
+                - listitem [ref=e1266]: • 128 GB ROM
+                - listitem [ref=e1267]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+                - listitem [ref=e1268]: • 12MP + 12MP | 12MP Front Camera
+                - listitem [ref=e1269]: • A15 Bionic Chip, 6 Core Processor Processor
+                - listitem [ref=e1270]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=e1271]:
+              - generic [ref=e1274]: ₹54,900
+              - img [ref=e1276]
+              - generic [ref=e1278]:
+                - generic [ref=e1279]: Upto
+                - generic [ref=e1280]: ₹38,300
+                - generic [ref=e1281]: Off on Exchange
+              - generic [ref=e1284]: Bank Offer
+        - link "Apple iPhone 16e (Black, 128 GB) Add to Compare Apple iPhone 16e (Black, 128 GB) 4.5 1,443 Ratings & 98 Reviews • 128 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 48MP Rear Camera | 12MP Front Camera • A18 Chip, 6 Core Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹59,900 Upto ₹43,650 Off on Exchange Bank Offer" [ref=e1289] [cursor=pointer]:
+          - /url: /apple-iphone-16e-black-128-gb/p/itm730f9c68ad562?pid=MOBH9JVHHRBD4BZP&lid=LSTMOBH9JVHHRBD4BZPLVWLEE&marketplace=FLIPKART&q=apple+iphone+16+ultramarine+128+gb&store=tyy%2F4io&srno=s_1_20&otracker=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&fm=organic&iid=26d32c2d-560a-43ae-8516-013f777b758d.MOBH9JVHHRBD4BZP.SEARCH&ppt=None&ppn=None&ssid=grt2hzfrgg0000001781452091891&qH=a185e31ecd725b0e&ov_redirect=true
+          - generic [ref=e1290]:
+            - img "Apple iPhone 16e (Black, 128 GB)" [ref=e1294]
+            - generic [ref=e1300]: Add to Compare
+            - img [ref=e1303]
+          - generic [ref=e1305]:
+            - generic [ref=e1306]:
+              - generic [ref=e1307]: Apple iPhone 16e (Black, 128 GB)
+              - generic [ref=e1308]:
+                - generic [ref=e1310]:
+                  - text: "4.5"
+                  - img [ref=e1311]
+                - generic [ref=e1313]: 1,443 Ratings & 98 Reviews
+              - list [ref=e1315]:
+                - listitem [ref=e1316]: • 128 GB ROM
+                - listitem [ref=e1317]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+                - listitem [ref=e1318]: • 48MP Rear Camera | 12MP Front Camera
+                - listitem [ref=e1319]: • A18 Chip, 6 Core Processor
+                - listitem [ref=e1320]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=e1321]:
+              - generic [ref=e1324]: ₹59,900
+              - img [ref=e1326]
+              - generic [ref=e1328]:
+                - generic [ref=e1329]: Upto
+                - generic [ref=e1330]: ₹43,650
+                - generic [ref=e1331]: Off on Exchange
+              - generic [ref=e1334]: Bank Offer
+        - link "Apple iPhone 16 Plus (White, 256 GB) Add to Compare Apple iPhone 16 Plus (White, 256 GB) 4.6 4,098 Ratings & 253 Reviews • 256 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 48MP + 12MP | 12MP Front Camera • A18 Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹89,900 Upto ₹47,350 Off on Exchange Bank Offer" [ref=e1339] [cursor=pointer]:
+          - /url: /apple-iphone-16-plus-white-256-gb/p/itmc63bd0635f400?pid=MOBH4DQFJBVD9HXR&lid=LSTMOBH4DQFJBVD9HXRID41K3&marketplace=FLIPKART&q=apple+iphone+16+ultramarine+128+gb&store=tyy%2F4io&srno=s_1_21&otracker=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&fm=organic&iid=26d32c2d-560a-43ae-8516-013f777b758d.MOBH4DQFJBVD9HXR.SEARCH&ppt=None&ppn=None&ssid=grt2hzfrgg0000001781452091891&qH=a185e31ecd725b0e&ov_redirect=true
+          - generic [ref=e1340]:
+            - img "Apple iPhone 16 Plus (White, 256 GB)" [ref=e1344]
+            - generic [ref=e1350]: Add to Compare
+            - img [ref=e1353]
+          - generic [ref=e1355]:
+            - generic [ref=e1356]:
+              - generic [ref=e1357]: Apple iPhone 16 Plus (White, 256 GB)
+              - generic [ref=e1358]:
+                - generic [ref=e1360]:
+                  - text: "4.6"
+                  - img [ref=e1361]
+                - generic [ref=e1363]: 4,098 Ratings & 253 Reviews
+              - list [ref=e1365]:
+                - listitem [ref=e1366]: • 256 GB ROM
+                - listitem [ref=e1367]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+                - listitem [ref=e1368]: • 48MP + 12MP | 12MP Front Camera
+                - listitem [ref=e1369]: • A18 Chip, 6 Core Processor Processor
+                - listitem [ref=e1370]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=e1371]:
+              - generic [ref=e1374]: ₹89,900
+              - img [ref=e1376]
+              - generic [ref=e1378]:
+                - generic [ref=e1379]: Upto
+                - generic [ref=e1380]: ₹47,350
+                - generic [ref=e1381]: Off on Exchange
+              - generic [ref=e1384]: Bank Offer
+        - link "Apple iPhone 16 Pro (White Titanium, 512 GB) Currently unavailable Add to Compare Apple iPhone 16 Pro (White Titanium, 512 GB) 4.7 28,727 Ratings & 1,279 Reviews • 512 GB ROM • 16.0 cm (6.3 inch) Super Retina XDR Display • 48MP + 48MP + 12MP | 12MP Front Camera • A18 Pro Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹1,39,900 Upto ₹47,350 Off on Exchange Bank Offer" [ref=e1389] [cursor=pointer]:
+          - /url: /apple-iphone-16-pro-white-titanium-512-gb/p/itm748273e9c8828?pid=MOBH4JCVJWZH2GTM&lid=LSTMOBH4JCVJWZH2GTMKVGCT6&marketplace=FLIPKART&q=apple+iphone+16+ultramarine+128+gb&store=tyy%2F4io&srno=s_1_22&otracker=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&fm=organic&iid=26d32c2d-560a-43ae-8516-013f777b758d.MOBH4JCVJWZH2GTM.SEARCH&ppt=None&ppn=None&ssid=grt2hzfrgg0000001781452091891&qH=a185e31ecd725b0e&ov_redirect=true
+          - generic [ref=e1390]:
+            - generic [ref=e1391]:
+              - img "Apple iPhone 16 Pro (White Titanium, 512 GB)" [ref=e1394]
+              - generic: Currently unavailable
+            - generic [ref=e1400]: Add to Compare
+            - img [ref=e1403]
+          - generic [ref=e1405]:
+            - generic [ref=e1406]:
+              - generic [ref=e1407]: Apple iPhone 16 Pro (White Titanium, 512 GB)
+              - generic [ref=e1408]:
+                - generic [ref=e1410]:
+                  - text: "4.7"
+                  - img [ref=e1411]
+                - generic [ref=e1413]: 28,727 Ratings & 1,279 Reviews
+              - list [ref=e1415]:
+                - listitem [ref=e1416]: • 512 GB ROM
+                - listitem [ref=e1417]: • 16.0 cm (6.3 inch) Super Retina XDR Display
+                - listitem [ref=e1418]: • 48MP + 48MP + 12MP | 12MP Front Camera
+                - listitem [ref=e1419]: • A18 Pro Chip, 6 Core Processor Processor
+                - listitem [ref=e1420]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=e1421]:
+              - generic [ref=e1424]: ₹1,39,900
+              - img [ref=e1426]
+              - generic [ref=e1428]:
+                - generic [ref=e1429]: Upto
+                - generic [ref=e1430]: ₹47,350
+                - generic [ref=e1431]: Off on Exchange
+              - generic [ref=e1434]: Bank Offer
+        - link "Apple iPhone 16 Pro (Black Titanium, 256 GB) Currently unavailable Add to Compare Apple iPhone 16 Pro (Black Titanium, 256 GB) 4.7 28,727 Ratings & 1,279 Reviews • 256 GB ROM • 16.0 cm (6.3 inch) Super Retina XDR Display • 48MP + 48MP + 12MP | 12MP Front Camera • A18 Pro Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹1,19,900 Upto ₹47,350 Off on Exchange Bank Offer" [ref=e1439] [cursor=pointer]:
+          - /url: /apple-iphone-16-pro-black-titanium-256-gb/p/itm9ce88307f4033?pid=MOBH4DQFEJYHHM7X&lid=LSTMOBH4DQFEJYHHM7XVVTGZH&marketplace=FLIPKART&q=apple+iphone+16+ultramarine+128+gb&store=tyy%2F4io&srno=s_1_23&otracker=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&fm=organic&iid=26d32c2d-560a-43ae-8516-013f777b758d.MOBH4DQFEJYHHM7X.SEARCH&ppt=None&ppn=None&ssid=grt2hzfrgg0000001781452091891&qH=a185e31ecd725b0e&ov_redirect=true
+          - generic [ref=e1440]:
+            - generic [ref=e1441]:
+              - img "Apple iPhone 16 Pro (Black Titanium, 256 GB)" [ref=e1444]
+              - generic: Currently unavailable
+            - generic [ref=e1450]: Add to Compare
+            - img [ref=e1453]
+          - generic [ref=e1455]:
+            - generic [ref=e1456]:
+              - generic [ref=e1457]: Apple iPhone 16 Pro (Black Titanium, 256 GB)
+              - generic [ref=e1458]:
+                - generic [ref=e1460]:
+                  - text: "4.7"
+                  - img [ref=e1461]
+                - generic [ref=e1463]: 28,727 Ratings & 1,279 Reviews
+              - list [ref=e1465]:
+                - listitem [ref=e1466]: • 256 GB ROM
+                - listitem [ref=e1467]: • 16.0 cm (6.3 inch) Super Retina XDR Display
+                - listitem [ref=e1468]: • 48MP + 48MP + 12MP | 12MP Front Camera
+                - listitem [ref=e1469]: • A18 Pro Chip, 6 Core Processor Processor
+                - listitem [ref=e1470]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=e1471]:
+              - generic [ref=e1474]: ₹1,19,900
+              - img [ref=e1476]
+              - generic [ref=e1478]:
+                - generic [ref=e1479]: Upto
+                - generic [ref=e1480]: ₹47,350
+                - generic [ref=e1481]: Off on Exchange
+              - generic [ref=e1484]: Bank Offer
+        - link "Apple iPhone 16 (Black, 256 GB) Add to Compare Apple iPhone 16 (Black, 256 GB) 4.6 1,94,072 Ratings & 6,858 Reviews • 256 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 48MP + 12MP | 12MP Front Camera • A18 Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹72,900 ₹79,900 8% off Only few left Upto ₹47,350 Off on Exchange" [ref=e1489] [cursor=pointer]:
+          - /url: /apple-iphone-16-black-256-gb/p/itm86da1977dcdf1?pid=MOBH4DQFZCJJXUFG&lid=LSTMOBH4DQFZCJJXUFGO5DY3W&marketplace=FLIPKART&q=apple+iphone+16+ultramarine+128+gb&store=tyy%2F4io&srno=s_1_24&otracker=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&fm=organic&iid=26d32c2d-560a-43ae-8516-013f777b758d.MOBH4DQFZCJJXUFG.SEARCH&ppt=None&ppn=None&ssid=grt2hzfrgg0000001781452091891&qH=a185e31ecd725b0e&ov_redirect=true
+          - generic [ref=e1490]:
+            - img "Apple iPhone 16 (Black, 256 GB)" [ref=e1494]
+            - generic [ref=e1500]: Add to Compare
+            - img [ref=e1503]
+          - generic [ref=e1505]:
+            - generic [ref=e1506]:
+              - generic [ref=e1507]: Apple iPhone 16 (Black, 256 GB)
+              - generic [ref=e1508]:
+                - generic [ref=e1510]:
+                  - text: "4.6"
+                  - img [ref=e1511]
+                - generic [ref=e1513]: 1,94,072 Ratings & 6,858 Reviews
+              - list [ref=e1515]:
+                - listitem [ref=e1516]: • 256 GB ROM
+                - listitem [ref=e1517]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+                - listitem [ref=e1518]: • 48MP + 12MP | 12MP Front Camera
+                - listitem [ref=e1519]: • A18 Chip, 6 Core Processor Processor
+                - listitem [ref=e1520]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=e1521]:
+              - generic [ref=e1523]:
+                - generic [ref=e1524]: ₹72,900
+                - generic [ref=e1525]: ₹79,900
+                - generic [ref=e1526]: 8% off
+              - img [ref=e1528]
+              - generic [ref=e1531]: Only few left
+              - generic [ref=e1533]:
+                - generic [ref=e1534]: Upto
+                - generic [ref=e1535]: ₹47,350
+                - generic [ref=e1536]: Off on Exchange
+        - generic [ref=e1539]:
+          - generic [ref=e1540]: Page 1 of 3
+          - navigation [ref=e1541]:
+            - link "1" [ref=e1542] [cursor=pointer]:
+              - /url: /search?q=apple+iphone+16+ultramarine+128+gb&sid=tyy%2C4io&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&as-pos=2&as-type=RECENT&suggestionId=apple+iphone+16+ultramarine+128+gb%7CMobiles&requestId=787a8f21-f774-4517-b0fe-5fa04625b79e&as-searchtext=apple+iphone+ul&page=1
+            - link "2" [ref=e1543] [cursor=pointer]:
+              - /url: /search?q=apple+iphone+16+ultramarine+128+gb&sid=tyy%2C4io&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&as-pos=2&as-type=RECENT&suggestionId=apple+iphone+16+ultramarine+128+gb%7CMobiles&requestId=787a8f21-f774-4517-b0fe-5fa04625b79e&as-searchtext=apple+iphone+ul&page=2
+            - link "3" [ref=e1544] [cursor=pointer]:
+              - /url: /search?q=apple+iphone+16+ultramarine+128+gb&sid=tyy%2C4io&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&as-pos=2&as-type=RECENT&suggestionId=apple+iphone+16+ultramarine+128+gb%7CMobiles&requestId=787a8f21-f774-4517-b0fe-5fa04625b79e&as-searchtext=apple+iphone+ul&page=3
+            - link "Next" [ref=e1545] [cursor=pointer]:
+              - /url: /search?q=apple+iphone+16+ultramarine+128+gb&sid=tyy%2C4io&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_2_15_na_na_ps&as-pos=2&as-type=RECENT&suggestionId=apple+iphone+16+ultramarine+128+gb%7CMobiles&requestId=787a8f21-f774-4517-b0fe-5fa04625b79e&as-searchtext=apple+iphone+ul&page=2
+        - generic [ref=e1547]:
+          - text: Did you find what you were looking for?
+          - generic [ref=e1548]:
+            - generic [ref=e1549] [cursor=pointer]: "Yes"
+            - generic [ref=e1550] [cursor=pointer]: "No"
+    - generic [ref=e1552]:
+      - generic [ref=e1553]: Reviews for Popular Mobiles
+      - generic [ref=e1554]:
+        - generic [ref=e1555]:
+          - generic [ref=e1557]:
+            - img "Apple iPhone 14 (Midnight, 128 GB)"
+          - generic [ref=e1558]:
+            - link "1. Apple iPhone 14 (Midnight, ... 4.6 2,84,387 Ratings&11,308 Reviews ₹54,900" [ref=e1559] [cursor=pointer]:
+              - /url: /apple-iphone-14-midnight-128-gb/p/itm9e6293c322a84?pid=MOBGHWFHECFVMDCX&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1561]: 1. Apple iPhone 14 (Midnight, ...
+              - generic [ref=e1562]:
+                - generic [ref=e1563]:
+                  - text: "4.6"
+                  - img [ref=e1564]
+                - generic [ref=e1565]:
+                  - text: 2,84,387 Ratings
+                  - generic [ref=e1566]: "&11,308 Reviews"
+              - generic [ref=e1569]: ₹54,900
+            - list [ref=e1570]:
+              - listitem [ref=e1571]: 128 GB ROM
+              - listitem [ref=e1572]: 15.49 cm (6.1 inch) Super Retina XDR Display
+              - listitem [ref=e1573]: 12MP + 12MP | 12MP Front Camera
+        - generic [ref=e1574]:
+          - generic [ref=e1575]: Most Helpful Review
+          - generic [ref=e1577]:
+            - generic [ref=e1578]:
+              - generic [ref=e1579]:
+                - text: "5"
+                - img [ref=e1580]
+              - paragraph [ref=e1581]: Great product
+            - generic [ref=e1585]: Nice camera but battery drain fast specially on video recording
+            - generic [ref=e1587]:
+              - paragraph [ref=e1588]: Tara singh mehra
+              - img [ref=e1589]
+              - paragraph [ref=e1593]: Certified Buyer
+              - paragraph [ref=e1594]: Mar, 2023
+        - generic [ref=e1595]:
+          - generic [ref=e1596]: Recent Review
+          - generic [ref=e1598]:
+            - generic [ref=e1599]:
+              - generic [ref=e1600]:
+                - text: "5"
+                - img [ref=e1601]
+              - paragraph [ref=e1602]: Excellent
+            - generic [ref=e1605]:
+              - generic [ref=e1606]: 2 year back I purchased an iPhone from Flipkart, and I am very satisfied with my purchase. The product was delivered on time, the packaging was secure, and t...
+              - generic [ref=e1607] [cursor=pointer]: Read full review
+            - generic [ref=e1609]:
+              - paragraph [ref=e1610]: Vivek Kumar
+              - img [ref=e1611]
+              - paragraph [ref=e1615]: Certified Buyer
+              - paragraph [ref=e1616]: 3 days ago
+      - generic [ref=e1617]:
+        - generic [ref=e1618]:
+          - generic [ref=e1620]:
+            - img "Apple iPhone 16 (Pink, 256 GB)"
+          - generic [ref=e1621]:
+            - link "2. Apple iPhone 16 (Pink, 256 ... 4.6 1,94,072 Ratings&6,858 Reviews ₹72,900 8% off" [ref=e1622] [cursor=pointer]:
+              - /url: /apple-iphone-16-pink-256-gb/p/itm0d8c695cded44?pid=MOBH4DQF28XAYM2S&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1624]: 2. Apple iPhone 16 (Pink, 256 ...
+              - generic [ref=e1625]:
+                - generic [ref=e1626]:
+                  - text: "4.6"
+                  - img [ref=e1627]
+                - generic [ref=e1628]:
+                  - text: 1,94,072 Ratings
+                  - generic [ref=e1629]: "&6,858 Reviews"
+              - generic [ref=e1631]:
+                - generic [ref=e1632]: ₹72,900
+                - generic [ref=e1633]: 8% off
+            - list [ref=e1634]:
+              - listitem [ref=e1635]: 256 GB ROM
+              - listitem [ref=e1636]: 15.49 cm (6.1 inch) Super Retina XDR Display
+              - listitem [ref=e1637]: 48MP + 12MP | 12MP Front Camera
+        - generic [ref=e1638]:
+          - generic [ref=e1639]: Most Helpful Review
+          - generic [ref=e1641]:
+            - generic [ref=e1642]:
+              - generic [ref=e1643]:
+                - text: "5"
+                - img [ref=e1644]
+              - paragraph [ref=e1645]: Wonderful
+            - generic [ref=e1649]: such a beautiful color 🩷🥺😍
+            - generic [ref=e1651]:
+              - paragraph [ref=e1652]: Swagatika Hota
+              - img [ref=e1653]
+              - paragraph [ref=e1657]: Certified Buyer
+              - paragraph [ref=e1658]: 8 months ago
+        - generic [ref=e1659]:
+          - generic [ref=e1660]: Recent Review
+          - generic [ref=e1662]:
+            - generic [ref=e1663]:
+              - generic [ref=e1664]:
+                - text: "1"
+                - img [ref=e1665]
+              - paragraph [ref=e1666]: Hated it!
+            - generic [ref=e1670]: Worst Product purchased ever...There is battery swollen with in month...Attached clip tells the whole story....
+            - generic [ref=e1672]:
+              - paragraph [ref=e1673]: Sachin Tyagi
+              - img [ref=e1674]
+              - paragraph [ref=e1678]: Certified Buyer
+              - paragraph [ref=e1679]: 2 days ago
+      - generic [ref=e1680]:
+        - generic [ref=e1681]:
+          - generic [ref=e1683]:
+            - img "Apple iPhone 16 Plus (Ultramarine, 256 GB)"
+          - generic [ref=e1684]:
+            - link "3. Apple iPhone 16 Plus (Ultra... 4.6 4,098 Ratings&253 Reviews ₹89,900" [ref=e1685] [cursor=pointer]:
+              - /url: /apple-iphone-16-plus-ultramarine-256-gb/p/itm1a7499437978a?pid=MOBH4DQFZXQGRWHH&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1687]: 3. Apple iPhone 16 Plus (Ultra...
+              - generic [ref=e1688]:
+                - generic [ref=e1689]:
+                  - text: "4.6"
+                  - img [ref=e1690]
+                - generic [ref=e1691]:
+                  - text: 4,098 Ratings
+                  - generic [ref=e1692]: "&253 Reviews"
+              - generic [ref=e1695]: ₹89,900
+            - list [ref=e1696]:
+              - listitem [ref=e1697]: 256 GB ROM
+              - listitem [ref=e1698]: 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=e1699]: 48MP + 12MP | 12MP Front Camera
+        - generic [ref=e1700]:
+          - generic [ref=e1701]: Most Helpful Review
+          - generic [ref=e1703]:
+            - generic [ref=e1704]:
+              - generic [ref=e1705]:
+                - text: "5"
+                - img [ref=e1706]
+              - paragraph [ref=e1707]: Best in the market!
+            - generic [ref=e1711]: Excellent, awesome thanks Flipkart.
+            - generic [ref=e1713]:
+              - paragraph [ref=e1714]: Jitendra Singh
+              - img [ref=e1715]
+              - paragraph [ref=e1719]: Certified Buyer
+              - paragraph [ref=e1720]: Oct, 2024
+        - generic [ref=e1721]:
+          - generic [ref=e1722]: Recent Review
+          - generic [ref=e1724]:
+            - generic [ref=e1725]:
+              - generic [ref=e1726]:
+                - text: "5"
+                - img [ref=e1727]
+              - paragraph [ref=e1728]: Fabulous!
+            - generic [ref=e1731]:
+              - generic [ref=e1732]: Excellent product! Absolutely genuine ! Checked with serial number and everything, its found genuine! Was a bit dubious about the product quality but thanks ...
+              - generic [ref=e1733] [cursor=pointer]: Read full review
+            - generic [ref=e1735]:
+              - paragraph [ref=e1736]: Flipkart Customer
+              - img [ref=e1737]
+              - paragraph [ref=e1741]: Certified Buyer
+              - paragraph [ref=e1742]: 1 day ago
+      - generic [ref=e1743]:
+        - generic [ref=e1744]:
+          - generic [ref=e1746]:
+            - img "Apple iPhone 16e (Black, 128 GB)"
+          - generic [ref=e1747]:
+            - link "4. Apple iPhone 16e (Black, 12... 4.5 1,443 Ratings&98 Reviews ₹59,900" [ref=e1748] [cursor=pointer]:
+              - /url: /apple-iphone-16e-black-128-gb/p/itm730f9c68ad562?pid=MOBH9JVHHRBD4BZP&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1750]: 4. Apple iPhone 16e (Black, 12...
+              - generic [ref=e1751]:
+                - generic [ref=e1752]:
+                  - text: "4.5"
+                  - img [ref=e1753]
+                - generic [ref=e1754]:
+                  - text: 1,443 Ratings
+                  - generic [ref=e1755]: "&98 Reviews"
+              - generic [ref=e1758]: ₹59,900
+            - list [ref=e1759]:
+              - listitem [ref=e1760]: 128 GB ROM
+              - listitem [ref=e1761]: 15.49 cm (6.1 inch) Super Retina XDR Display
+              - listitem [ref=e1762]: 48MP Rear Camera | 12MP Front Camera
+        - generic [ref=e1763]:
+          - generic [ref=e1764]: Most Helpful Review
+          - generic [ref=e1766]:
+            - generic [ref=e1767]:
+              - generic [ref=e1768]:
+                - text: "5"
+                - img [ref=e1769]
+              - paragraph [ref=e1770]: Terrific purchase
+            - generic [ref=e1774]: iPhone 16e is premium and battery beast ! It has C1 chip which provides best network connectivity and battery saving.
+            - generic [ref=e1776]:
+              - paragraph [ref=e1777]: Vikram M
+              - img [ref=e1778]
+              - paragraph [ref=e1782]: Certified Buyer
+              - paragraph [ref=e1783]: 10 months ago
+        - generic [ref=e1784]:
+          - generic [ref=e1785]: Recent Review
+          - generic [ref=e1787]:
+            - generic [ref=e1788]:
+              - generic [ref=e1789]:
+                - text: "5"
+                - img [ref=e1790]
+              - paragraph [ref=e1791]: Must buy!
+            - generic [ref=e1795]: Great phone great battery camera is fantastic
+            - generic [ref=e1797]:
+              - paragraph [ref=e1798]: ABHISHEK SINGH
+              - img [ref=e1799]
+              - paragraph [ref=e1803]: Certified Buyer
+              - paragraph [ref=e1804]: 10 days ago
+      - generic [ref=e1805]:
+        - generic [ref=e1806]:
+          - generic [ref=e1808]:
+            - img "Apple iPhone 15 (Blue, 128 GB)"
+          - generic [ref=e1809]:
+            - link "5. Apple iPhone 15 (Blue, 128 ... 4.6 2,45,980 Ratings&9,280 Reviews ₹54,900 8% off" [ref=e1810] [cursor=pointer]:
+              - /url: /apple-iphone-15-blue-128-gb/p/itmbf14ef54f645d?pid=MOBGTAGPAQNVFZZY&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=e1812]: 5. Apple iPhone 15 (Blue, 128 ...
+              - generic [ref=e1813]:
+                - generic [ref=e1814]:
+                  - text: "4.6"
+                  - img [ref=e1815]
+                - generic [ref=e1816]:
+                  - text: 2,45,980 Ratings
+                  - generic [ref=e1817]: "&9,280 Reviews"
+              - generic [ref=e1819]:
+                - generic [ref=e1820]: ₹54,900
+                - generic [ref=e1821]: 8% off
+            - list [ref=e1822]:
+              - listitem [ref=e1823]: 128 GB ROM
+              - listitem [ref=e1824]: 15.49 cm (6.1 inch) Super Retina XDR Display
+              - listitem [ref=e1825]: 48MP + 12MP | 12MP Front Camera
+        - generic [ref=e1826]:
+          - generic [ref=e1827]: Most Helpful Review
+          - generic [ref=e1829]:
+            - generic [ref=e1830]:
+              - generic [ref=e1831]:
+                - text: "5"
+                - img [ref=e1832]
+              - paragraph [ref=e1833]: Must buy!
+            - generic [ref=e1837]: Using this Iphone 15 from 1month and it has best Camera
+            - generic [ref=e1839]:
+              - paragraph [ref=e1840]: Flipkart Customer
+              - img [ref=e1841]
+              - paragraph [ref=e1845]: Certified Buyer
+              - paragraph [ref=e1846]: Apr, 2024
+        - generic [ref=e1847]:
+          - generic [ref=e1848]: Recent Review
+          - generic [ref=e1850]:
+            - generic [ref=e1851]:
+              - generic [ref=e1852]:
+                - text: "5"
+                - img [ref=e1853]
+              - paragraph [ref=e1854]: Super!
+            - generic [ref=e1858]:
+              - text: Top class
+              - text: "#apple known for iPhones"
+            - generic [ref=e1860]:
+              - paragraph [ref=e1861]: VIJUL CHAUDHARY
+              - img [ref=e1862]
+              - paragraph [ref=e1866]: Certified Buyer
+              - paragraph [ref=e1867]: 1 day ago
+  - contentinfo [ref=e1868]:
+    - generic [ref=e1870]:
+      - generic [ref=e1871]:
+        - generic [ref=e1872]:
+          - generic [ref=e1873]: ABOUT
+          - link "Contact Us" [ref=e1874] [cursor=pointer]:
+            - /url: /helpcentre?otracker=footer_navlinks
+          - link "About Us" [ref=e1875] [cursor=pointer]:
+            - /url: https://corporate.flipkart.net/corporate-home
+          - link "Careers" [ref=e1876] [cursor=pointer]:
+            - /url: https://www.flipkartcareers.com/?otracker=footer_navlinks
+          - link "Flipkart Stories" [ref=e1877] [cursor=pointer]:
+            - /url: http://stories.flipkart.com/?otracker=footer_navlinks
+          - link "Press" [ref=e1878] [cursor=pointer]:
+            - /url: http://stories.flipkart.com/category/top-stories/news/
+          - link "Corporate Information" [ref=e1879] [cursor=pointer]:
+            - /url: /corporate-information
+        - generic [ref=e1880]:
+          - generic [ref=e1881]: GROUP COMPANIES
+          - link "Myntra" [ref=e1882] [cursor=pointer]:
+            - /url: https://www.myntra.com/
+          - link "Cleartrip" [ref=e1883] [cursor=pointer]:
+            - /url: https://www.cleartrip.com/
+          - link "Shopsy" [ref=e1884] [cursor=pointer]:
+            - /url: https://www.shopsy.in/
+        - generic [ref=e1885]:
+          - generic [ref=e1886]: HELP
+          - link "Payments" [ref=e1887] [cursor=pointer]:
+            - /url: /pages/payments
+          - link "Shipping" [ref=e1888] [cursor=pointer]:
+            - /url: /pages/shipping
+          - link "Cancellation & Returns" [ref=e1889] [cursor=pointer]:
+            - /url: /helpcentre?catalog=55c9c6edb000002e002c1701&view=CATALOG
+          - link "FAQ" [ref=e1890] [cursor=pointer]:
+            - /url: /helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG
+        - generic [ref=e1891]:
+          - generic [ref=e1892]: CONSUMER POLICY
+          - link "Cancellation & Returns" [ref=e1893] [cursor=pointer]:
+            - /url: /pages/returnpolicy?otracker=footer_navlinks
+          - link "Terms Of Use" [ref=e1894] [cursor=pointer]:
+            - /url: /pages/terms?otracker=footer_navlinks
+          - link "Security" [ref=e1895] [cursor=pointer]:
+            - /url: /pages/paymentsecurity?otracker=footer_navlinks
+          - link "Privacy" [ref=e1896] [cursor=pointer]:
+            - /url: /pages/privacypolicy?otracker=footer_navlinks
+          - link "Sitemap" [ref=e1897] [cursor=pointer]:
+            - /url: /sitemap?otracker=footer_navlinks
+          - link "Grievance Redressal" [ref=e1898] [cursor=pointer]:
+            - /url: /pages/grievance-redressal-mechanism?otracker=footer_navlinks
+          - link "EPR Compliance" [ref=e1899] [cursor=pointer]:
+            - /url: /pages/ewaste-compliance-tnc?otracker=footer_navlinks
+          - link "FSSAI Food Safety Connect App" [ref=e1900] [cursor=pointer]:
+            - /url: https://fssai.gov.in/cms/food-safety-connect.php
+        - generic [ref=e1902]:
+          - generic [ref=e1903]: "Mail Us:"
+          - generic [ref=e1906]:
+            - paragraph [ref=e1907]: Flipkart Internet Private Limited,
+            - paragraph [ref=e1908]: Buildings Alyssa, Begonia &
+            - paragraph [ref=e1909]: Clove Embassy Tech Village,
+            - paragraph [ref=e1910]: Outer Ring Road, Devarabeesanahalli Village,
+            - paragraph [ref=e1911]: Bengaluru, 560103,
+            - paragraph [ref=e1912]: Karnataka, India
+          - generic [ref=e1913]: Social
+          - generic [ref=e1914]:
+            - link [ref=e1916] [cursor=pointer]:
+              - /url: https://www.facebook.com/flipkart
+              - img [ref=e1917]
+            - link [ref=e1919] [cursor=pointer]:
+              - /url: https://www.twitter.com/flipkart
+              - img [ref=e1920]
+            - link [ref=e1922] [cursor=pointer]:
+              - /url: https://www.youtube.com/flipkart
+              - img [ref=e1923]
+            - link [ref=e1925] [cursor=pointer]:
+              - /url: https://www.instagram.com/flipkart
+              - img [ref=e1926]
+        - generic [ref=e1928]:
+          - generic [ref=e1929]: "Registered Office Address:"
+          - generic [ref=e1932]:
+            - paragraph [ref=e1933]: Flipkart Internet Private Limited,
+            - paragraph [ref=e1934]: Buildings Alyssa, Begonia &
+            - paragraph [ref=e1935]: Clove Embassy Tech Village,
+            - paragraph [ref=e1936]: Outer Ring Road, Devarabeesanahalli Village,
+            - paragraph [ref=e1937]: Bengaluru, 560103,
+            - paragraph [ref=e1938]: Karnataka, India
+            - paragraph [ref=e1939]: "CIN : U51109KA2012PTC066107"
+            - paragraph [ref=e1940]:
+              - text: "Telephone:"
+              - link "044-45614700" [ref=e1941] [cursor=pointer]:
+                - /url: tel:044-45614700
+              - text: /
+              - link "044-67415800" [ref=e1942] [cursor=pointer]:
+                - /url: tel:044-67415800
+      - generic [ref=e1944]:
+        - generic [ref=e1945]:
+          - img [ref=e1946]
+          - link "Become a Seller" [ref=e1947] [cursor=pointer]:
+            - /url: https://seller.flipkart.com/?utm_source=fkwebsite&utm_medium=websitedirect
+        - generic [ref=e1948]:
+          - img [ref=e1949]
+          - text: Advertise
+        - generic [ref=e1950]:
+          - img [ref=e1951]
+          - link "Gift Cards" [ref=e1952] [cursor=pointer]:
+            - /url: /the-gift-card-store?otracker=footer_navlinks
+        - generic [ref=e1953]:
+          - img [ref=e1954]
+          - link "Help Center" [ref=e1955] [cursor=pointer]:
+            - /url: /helpcentre?otracker=footer_navlinks
+        - generic [ref=e1956]: © 2007-2026 Flipkart.com
+        - img [ref=e1957]
+```
