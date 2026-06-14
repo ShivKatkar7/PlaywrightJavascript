@@ -46,6 +46,7 @@ pipeline {
     post {
         always {
             archiveArtifacts artifacts: 'playwright-report/**', allowEmptyArchive: true
+            emailext body: 'Jenkins build status', subject: 'Jenkins pipeline status', to: 'shivanikatkar18@gmail.com'
         }
     }
 }
